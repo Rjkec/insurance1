@@ -1,0 +1,117 @@
+@use 'vars';
+
+.seven-page {
+     min-height: 570px;
+     background-color: black;
+     .seven-page-container {
+          max-width: 1380px;
+          margin: auto;
+          .flex-container{
+               display: flex;
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               padding: 0px 20px;
+     
+               .text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 60px;
+                    padding: 6% 3% 10% 3%;
+                    p{
+                         color: white;
+                    }
+                    .p-red {
+                         background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;
+                    }
+               }
+               .what-to-do{                    
+                         color: white;
+                         background: #171717;                        
+                         width: 800px;
+                         height: 570px;     
+                    .text-flex-container{    
+                         display: flex;
+                         flex-direction: column;
+                         gap: 23px; 
+                         padding: 10%;
+                    }
+                         .p-main{
+                              font-weight: 500;
+                              font-size: 30px;
+                         }
+                         .list{
+                              display: flex;
+                              flex-direction: row;
+                              align-items: center;
+                              p{
+                                   padding-left: 30px;
+                              }
+                         }
+                         .links{
+
+                              background: linear-gradient(89.74deg, #CA2F2F 3.02%, #EE3434 110.47%);
+                              border-radius: 8px;
+                              .icon-links {
+                                   position: absolute;
+                                   display: flex;
+                                   gap: 9px;
+                                   transform: translate(28%, 80%);
+                                   align-items: center;
+                                   position: absolute;
+                              }
+                         }
+                    }
+               }  
+          }   
+     }
+@media (max-width: 1100px) {
+     .seven-page .seven-page-container .flex-container{
+          flex-direction: column;
+          align-items: center;
+          .text{
+               padding: 5% 3% 4% 3%;
+               align-items: center;
+          }
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do{
+          width: 69%;
+     }
+     
+     
+}
+
+@media (max-width: 768px){
+     .seven-page .seven-page-container{
+          height: 1010px;
+     }
+     .seven-page .seven-page-container .flex-container .text{
+          font-size: 42px;
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do .p-main{
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do .list{
+          flex-direction: column;
+          gap: 28px;
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do .list p{
+          font-size: 18px;
+          padding-left: 0px;
+          text-align: center;
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do{
+          height: 844px;
+          width: 100%;
+          a{
+               display: none;
+          }
+     }
+} 

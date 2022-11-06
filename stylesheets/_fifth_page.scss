@@ -1,0 +1,232 @@
+@use 'vars';
+
+.fifth-page-container {
+     min-height: 100%;
+     background: linear-gradient(343.43deg, #EFEFEF 16.94%, #FEFEFE 96.46%);
+     .content {
+          max-width: 1380px;
+          margin: auto;
+          padding-left: 20px;
+          padding-right: 20px;
+          .content-flex{
+               display: flex;
+               justify-content: space-around;
+               padding-top: 10%;
+               padding-bottom: 10%;
+               gap: 50px;
+               svg{
+                    max-width: 100%;
+               }
+               .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .text-header{
+                         margin-bottom: 10px;
+                         .p-color{
+                              font-family: vars.$regular-family-1;
+                              font-weight: 600;
+                              font-size: 60px;      
+                              background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                         }
+                         .p-period {
+                              font-family: vars.$regular-family-1;
+                              font-weight: 500;
+                              font-size: 60px;
+                              margin-bottom: 10px;    
+                         }
+                     }
+               }
+               .rectangle{
+                    max-width: 624px;
+                    max-height: 100%;
+                    background: #FFFFFF;
+                    border-radius: 50px;
+                    margin: 1%;
+                    width: 600px;
+
+                    .rectangle-content{
+                         display: flex;
+                         align-items: center;
+                         margin: 2%;
+                         transform: translate(6%, 7%);
+                    }
+                    .text{
+                         display: flex;
+                         flex-direction: column;
+                    }
+                    p{   padding-left: 10px;
+                         font-weight: 400;
+                         font-size: 20px;
+                    }
+                    .p-red{
+                         font-weight: 500;
+                         background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;
+                    }
+               }
+          }
+          .contact{
+               position: relative;
+               display: inline-block;
+               .contact-content{
+                    position: absolute;
+                    width: 83%;
+                    top: 43%;
+                    left: 40%;
+                    transform: translate(-36%, -44%);
+                    .contact-flex{
+                         display: flex;
+                         flex-direction: column;
+                         justify-content:center ;
+                         img{
+                              max-width: 31%;
+                         }
+                         p{
+                              color: white;
+                              font-size: 18px;
+                         }
+                         .p-header{
+                              font-family: 'Inter';
+                              font-style: normal;
+                              font-weight: 600;                         
+                              font-size: 24px;
+                              margin-top: 10px;
+                              margin-bottom: 10px;
+                         }
+                         .contacts{
+                              display: flex;
+                              align-items: center;
+                              gap: 49px;
+                              flex-direction: row;
+                              padding: 10% 0% 0% 0%;
+                              a{
+                                   background: linear-gradient(110.89deg, #FF7373 -65.39%, #FF4444 89.78%);
+                                   -webkit-background-clip: text;
+                                   -webkit-text-fill-color: transparent;                             
+                                   font-weight: 700;
+                                   font-size: 24px;
+                              }
+                              .links{
+                                   background: linear-gradient(89.74deg, #CA2F2F 3.02%, #EE3434 110.47%);
+                                   border-radius: 8px;
+                                   position: relative;
+                                   .icon-links {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 16%;                                    
+                                        transform: translate(-2%, -52%);
+                                        svg{
+                                             max-width: 100%;
+                                        }
+                                                                      
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+}
+
+@media (max-width: 1100px) {
+     .fifth-page-container .content .content-flex{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          .svg {
+               max-width: 90%;
+          }
+     }
+
+     .fifth-page-container .content .content-flex .info .text-header{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .fifth-page-container .content .content-flex .rectangle {
+          margin-bottom: 3%;
+          p{
+               font-size: 23px;
+          }
+          
+          .text{
+               align-items: center;
+          }
+          .rectangle-content{
+               display: flex;
+               margin: 2%;
+               gap: 6px;
+               transform: translate(0%, 0%);
+               flex-direction: column;
+               align-items: center;
+          }
+          
+}
+     
+     
+     
+}
+
+@media (max-width: 768px) {
+     .fifth-page-container .content .content-flex{
+          gap: 0;
+     }
+     .fifth-page-container .content .content-flex .info .text-header .p-color{
+          font-size: 36px;
+     }
+     .fifth-page-container .content .content-flex .info .text-header .p-period{
+          font-size: 31px;
+     }
+     .fifth-page-container .content .content-flex .rectangle{
+          width: 295px;
+          padding-left: 10px;
+     }
+     .fifth-page-container .content .content-flex .rectangle .rectangle-content{
+          margin: 10%;
+     }
+     .fifth-page-container .content .content-flex .rectangle p{
+          font-size: 19px;
+          font-weight: 600;
+          padding-top: 9px;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex img{
+          max-width: 23%;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex .contacts .links .icon-links {
+          width: 65%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 3px;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex .contacts{
+          gap: 0px;
+     }
+     .fifth-page-container .content .contact .contact-content{
+          width: 60%;
+          top: 43%;
+          left: 37%;
+     }
+     .fifth-page-container .content .content-flex .svg{
+          max-width:100%;
+          width: 320px;
+          height: 259px;
+          padding-top: 20px;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex .p-header{
+          font-size: 13px;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex p{
+          font-size: 10px;
+     }
+     .fifth-page-container .content .contact .contact-content .contact-flex .contacts a{
+          font-size: 19px;
+     }
+}

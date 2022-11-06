@@ -1,0 +1,76 @@
+@use 'vars';
+
+.eight-page{
+     max-height: 672px;
+     background: linear-gradient(180deg, #FFFFFF 0%, #EDEDED 100%);
+     .eight-page-container{
+          max-width: 1380px;
+          margin: auto;
+          .contacts{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               padding: 10% 5% 10% 5%;
+               gap: 6%;
+               .p-header{
+                    font-weight: 600;
+                    font-size: 3vw;
+                    
+               }
+               p{
+                    font-weight: 500;
+                    font-size: 18px;
+               }
+               a{
+                    color: black;
+                    font-weight: 500;
+                    font-size: 18px;
+               }
+          }
+     }
+}
+
+.text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     justify-content: space-between;
+     padding-bottom: 3%;
+}
+.data{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 20px;
+     padding-top: 3%;
+     
+}
+
+.map{
+     max-width: 770px;
+     
+}
+@media (max-width:768px) {
+     .eight-page{
+          max-height: 100%;
+     }
+     .eight-page .eight-page-container .contacts{
+          flex-direction: column;
+     }
+     .eight-page .eight-page-container .contacts .p-header{
+          font-size: 30px;
+     }
+     .eight-page .eight-page-container .contacts{
+          .text{
+               padding-bottom: 9%;
+          }
+          .text-center{
+               .data{                    
+                    padding-top: 6%;
+               }
+          }
+     }
+     .eight-page .eight-page-container .contacts p{
+          font-size: 16px;
+     }
+   }

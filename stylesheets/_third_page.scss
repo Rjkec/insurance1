@@ -1,0 +1,240 @@
+@use 'vars';
+
+.third-page{
+     max-height: 100%;   
+     background: #FFFFFF;
+     .third-page-container{
+          max-width: 1380px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3{  
+               margin-top: 88px;
+               margin-bottom: 88px;
+               color: black;
+               font-weight: 600;
+               font-size: 60px;
+          }
+          .service-container{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;   
+               padding: 0% 2% 8% 2%;       
+               svg{
+                    width: 36%;
+                    //height: 36%;
+               }   
+               .services-card-1 { 
+                    max-width: 30%;
+                    height: 350px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;           
+                    border: 1px solid #E1E1E1;
+                    box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
+                    border-radius: 50px;
+                    .flex-card-1{
+                         width: 80%;
+                         height: 80%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between; 
+                         //margin: 10% 4% 0% 8%;  
+                         p{   
+                              font-weight: 700;
+                              font-size: 24px;
+                              background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;                              
+                              //margin: 13% 0% 4% 5%;
+                              
+                         }
+                         .svg-container{
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-items: flex-end;
+                              //margin: 10%;
+                              //margin: 30% 8% 10% 6%;
+                             
+
+                         }
+                    }
+                    }
+               .services-card-2 { 
+                    max-width: 30%;
+                    height: 350px; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;              
+                    background: #FFFFFF;              
+                    border: 1px solid #E1E1E1;
+                    box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
+                    border-radius: 50px;
+                    .flex-card-2{                        
+                         width: 80%;
+                         height: 80%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                       
+                         .p-header{   
+                              font-weight: 700;
+                              font-size: 24px;
+                              background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                                                        
+                              
+                         }
+                         p{                                                           
+                              font-size: 18px;            
+                              
+                         }
+                         .svg-container{                              
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-items: flex-end;
+                              
+                         }
+                    }
+               }
+               .services-card-3 { 
+                    max-width: 30%;
+                    height: 350px;                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    background: #FFFFFF;              
+                    border: 1px solid #E1E1E1;
+                    box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
+                    border-radius: 50px;
+                    .flex-card-3{
+                         width: 80%;
+                         height: 80%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                         
+                         .p-header{                             
+                              font-size: 24px;
+                              font-weight: 700;
+                              background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                             
+                         } 
+                         .p-text {                                                         
+                             font-size: 18px;
+                         }
+                              
+                              
+                         
+                         .svg-container{
+                              
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-items: flex-end;
+                              //margin: 30% 8% 10% 6%;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width: 1100px) {
+     .third-page .third-page-container .service-container{
+
+          .services-card-1{
+               .flex-card-1 {
+                    p{
+                         font-size: 20px;
+                    }
+               }
+
+          } 
+          .services-card-2 {
+               
+          .flex-card-2 {
+               .p-header{
+                    font-size: 20px;
+               }
+               p{
+                    font-size: 16px; 
+               }
+
+          }
+          }
+          .services-card-3 {
+
+          .flex-card-3 {
+               .p-header{
+                    font-size: 20px;
+               }
+               p{
+                    font-size: 16px; 
+               }
+
+          }
+          }
+     } 
+         
+}
+
+@media (max-width: 768px) {
+     .third-page .third-page-container .service-container{
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+     }
+     .third-page .third-page-container h3{
+          font-size: 43px;
+     }
+     .third-page .third-page-container .service-container{
+          width: 300px;
+          .services-card-1{
+               max-width: 100%;
+               height: 400px;
+               .flex-card-1 {
+                    p{
+                         font-size: 20px;
+                    }
+               }
+
+          } 
+          .services-card-2 {
+               max-width: 100%;
+               height: 400px;
+
+               .flex-card-2 {
+                    .p-header{
+                         font-size: 20px;
+                    }
+                    p{
+                         font-size: 16px; 
+                    }
+
+          }
+          }
+          .services-card-3 {
+               width: 300px;
+               max-width: 100%;
+               height: 400px;
+
+               .flex-card-3 {
+                    .p-header{
+                         font-size: 20px;
+                    }
+                    p{
+                         font-size: 16px; 
+                    }
+
+          }
+          }
+     } 
+}
+

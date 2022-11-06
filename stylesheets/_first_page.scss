@@ -1,0 +1,161 @@
+@use 'vars';
+
+.full-page-container {
+     background-image: url(/images/DTP.png);
+     background-position-x: 100%;
+     background-position-y: 100%;
+     background-repeat: no-repeat;
+     background-size: 65%;
+     margin: auto;
+   
+     .content {
+          margin: auto;
+          max-width: 1380px;
+          min-height: 786px;
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;     
+          flex-direction: column;
+          gap: 50px;
+          .header {
+               height: 66px;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-between;
+               .logo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    p {
+                         font-weight: 600;
+                    }
+               }
+               .navbar{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 21px;
+               }
+               .contacts{
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+               }
+          }
+          .main-page {
+          display: flex;
+          flex-direction: column;
+          //gap: 50px;
+          transform: translate(0%, 0%);
+               h1 {
+                    font-size: 60px;
+                    font-weight: 600;
+                    font-style: normal;
+                    color: #000000
+               }
+               h2 {
+                    font-family: vars.$regular-family-2;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #444444;
+               }
+               .rectangle {
+                    margin-bottom: 10px;
+                    p {  
+                         font-weight: 500;
+                         position: absolute;
+                         transform: translate(13%, 33%);
+                         color: #8B8B8B;
+                    }
+               }
+               .button-contacts {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 4%;
+
+                    
+               .btn-grad {
+                              background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+                              margin-right: 14px;
+                              padding: 15px 45px;
+                              text-align: center;
+                              text-transform: uppercase;
+                              transition: 0.5s;
+                              background-size: 200% auto;
+                              color: white;            
+                              box-shadow: 0 0 20px #eee;
+                              border-radius: 8px;
+                              display: block;
+                              border: none;
+                              height: 60px;
+                              }
+
+                    .btn-grad:hover {
+                         background-position: right center; /* change the direction of the change here */
+                         color: #fff;
+                         text-decoration: none;
+                         }
+          
+                    
+                    .icon-links {
+                         position: absolute;
+                         display: flex;
+                         gap: 9px;
+                         transform: translate(28%, 80%);
+                         align-items: center;
+                         position: absolute;
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width: 1100px) {
+     
+}
+@media (min-width:768px) {
+     .full-page-container .content .main-page{
+          .logotip{
+               display: none;
+          } 
+
+     }
+}
+@media (max-width: 768px) {
+     .full-page-container .content .main-page h1{
+          font-size: 45px;
+     }
+     .full-page-container .content .main-page h2{
+          margin-bottom: 20px;
+     }
+     
+     .full-page-container .content .main-page .rectangle{
+          display: none;
+     }
+     .full-page-container{
+          background-size: 85%;
+     }
+     .full-page-container .content .header{
+          display: none;
+     }
+     .full-page-container .content .main-page{
+          transform: translate(0%, 33%);
+          .logotip{
+               transform: translate(25px,-158%);
+               img{
+                    width: 80px;
+               }
+          }
+     }
+     .full-page-container .content .main-page .button-contacts{
+          .links{
+               display: none;
+          }
+     }
+     .full-page-container .content .main-page .logotip{
+          transform: translate(4%, -159%);
+     }
+     
+}
+
+     
