@@ -1,5 +1,5 @@
 .full-page-container {
-  background-image: url(/images/DTP.png);
+  background-image: url(images/DTP.png);
   background-position-x: 100%;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -182,7 +182,7 @@
 }
 .second-page .second-page-content .help .help-background {
   min-height: 301px;
-  background-image: url(/images/sircle_second_page-main.png), url(/images/sircle_second_page_grey.png);
+  background-image: url(images/sircle_second_page-main.png), url(images/sircle_second_page_grey.png);
   background-position-x: 100%, 0%;
   background-position-y: 0%, 100%;
   background-repeat: no-repeat, no-repeat;
@@ -418,7 +418,7 @@
 }
 .fourth-page-container .background {
   height: 871px;
-  background-image: url(/images/fourth_page_bg_item_1.png), url(/images/fourth_page_bg_item_2.png);
+  background-image: url(images/fourth_page_bg_item_1.png), url(images/fourth_page_bg_item_2.png);
   background-repeat: no-repeat, no-repeat;
   background-position-x: 0px, 1467px;
   background-position-y: 412px, 0px;
