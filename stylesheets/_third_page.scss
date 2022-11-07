@@ -195,27 +195,24 @@
           font-size: 43px;
      }
      .third-page .third-page-container .service-container{
-          width: 73%;
-          svg{
-               //width: 16%;
-          }
+          width: 300px;
           .services-card-1{
                max-width: 100%;
-               max-height: 100%;
+               height: 400px;
                .flex-card-1 {
                     p{
-                         font-size: 23px;
+                         font-size: 20px;
                     }
                }
 
           } 
           .services-card-2 {
                max-width: 100%;
-               max-height: 100%;
+               height: 400px;
 
                .flex-card-2 {
                     .p-header{
-                         font-size: 23px;
+                         font-size: 20px;
                     }
                     p{
                          font-size: 16px; 
@@ -224,13 +221,13 @@
           }
           }
           .services-card-3 {
-               width: 100%;
+               width: 300px;
                max-width: 100%;
-              
+               height: 400px;
 
                .flex-card-3 {
                     .p-header{
-                         font-size: 23px;
+                         font-size: 20px;
                     }
                     p{
                          font-size: 16px; 
