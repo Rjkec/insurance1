@@ -3,7 +3,7 @@
 .fourth-page-container {
      background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #E9E9E9 100%);
      .background{
-          height: 871px;
+          height: 100%;
           background-image: url("../images/fourth_page_bg_item_1.png"),url("../images/fourth_page_bg_item_2.png");
           background-repeat: no-repeat,no-repeat;
           background-position-x: 0px, 1467px;
@@ -16,22 +16,23 @@
           padding-left: 10px;
           padding-right: 10px;
           .form-box{
-               height: 696px;
-               padding-top: 90px;         
+               height: 100%;
+               padding-top: 90px; 
+               padding-bottom: 90px;        
                .form{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     width: 509px;
-                    height: 696px;
+                    height: 112%;
                     margin: auto;
                     background: #FFFFFF;
                     border-radius: 20px;
+                    padding-top: 40px;
                     .form-content{
-                         margin: auto;
-                         height: 696px;                         
-                         width: 418px; 
-                         padding-top: 20px;                    
+                         margin: auto;                                                 
+                         width: 418px;
+                                            
 
                          .form-header{ 
                               display: flex;
@@ -56,6 +57,7 @@
 
                         form{
                          width: 400px;
+                         
                          .crash-date-fieldset{
                               border: none;
                               padding: 0;
@@ -131,14 +133,23 @@
                               }
                               .expandable{
                                    display: none;
+                                   flex-direction: column;
+                                   padding-bottom: 30px;
+                                   label{
+                                        padding-bottom: 10px;
+                                   }
+                                   input.text{
+                                   background: #E9E9E9;
+                                   border: none;
+                                   border-radius: 8px;
+                                   padding: 10px;
+                                   width: 23%;
+                                   }
                               }
-                              #expand-toggle:checked ~ .expandable{
-                                   display: block;
-                                   visibility: visible;     
                               }
-                         }
+                          
                         } 
-                        button {
+                        .submit {
                               width: 418px;
                               height: 60px;
                               border: none;
@@ -148,6 +159,7 @@
                               font-weight: 500;
                               font-size: 18px;
                               margin-top: 20px;
+                              margin-bottom: 40px;
                          }
                     }
                }
@@ -171,5 +183,8 @@
      }
      .fourth-page-container .content .form-box .form .form-content button{
           width: 287px;
+     }
+     .fourth-page-container .content .form-box .form .form-content .submit{
+          width: 295px;
      }
 }

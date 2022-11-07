@@ -12,6 +12,10 @@ footer{
                display: flex;
                flex-direction: row;
                align-items: center;
+               width: 22%;
+               img{
+                    width: 14%;
+               }
                p {
                     font-weight: 600;
                }
@@ -39,6 +43,9 @@ footer{
      footer .header .logo{
           justify-content: space-between;
           width: 100%;
+          img{
+               width: 11%;
+          }
      }
      
 }

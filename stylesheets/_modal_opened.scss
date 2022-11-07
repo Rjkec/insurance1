@@ -1,0 +1,150 @@
+@use 'vars';
+.modal{
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width:100vw;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(0,0,43,.5);
+ 
+ }
+ .modal-price{
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width:100vw;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(0,0,43,.5);
+}
+ .modal.opened {
+     display: flex;
+     
+     
+ 
+}
+
+.modal-price.opened{
+     display: flex;
+     
+}
+.modal-opened{
+     width: 700px;
+     height: 600px;
+     border-radius: 20px;
+     background-color: white;
+}
+
+
+
+
+.content-opened{
+     width: 509px;
+     height: 338px;     
+     background: linear-gradient(141.22deg, #FFFFFF -0.35%, #FBFBFB 77.72%);
+     border-radius: 20px;
+     margin: 10px;
+}
+
+#price {
+     
+     font-size: 3em;
+   
+     margin-left: 33px;
+     margin-top: 40px;
+     
+ }
+ .close {
+     position: absolute;
+     background: none;
+     border: none;
+     display: block;
+     margin-top: 22px;
+     margin-left: 451px;
+ }
+ .close-discount{
+     position: absolute;
+     background: none;
+     border: none;
+     display: block;
+     margin-top: 22px;
+     margin-left: 451px;
+ }
+ .close_svg {
+     width: 65px;
+     height: 65px;
+ }
+.discount{
+     padding: 50px 26px 26px 26px;
+}
+.discount-block{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     padding-top: 13px;
+     p{
+          font-weight: 700;
+          font-size: 80px;
+          background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+     }
+}
+ .info_title{
+     font-family: vars.$regular-family-1;     
+     text-align: center;
+     font-weight: 600;
+     font-size: 34px;
+ }
+ 
+ .contacts-modal{
+     display: flex;
+     align-items: center;
+     gap: 49px;
+     flex-direction: row;
+     justify-content: space-around;
+     padding: 7% 0% 0% 0%;
+     .call-us{
+          p{
+               font-weight: 500;
+               font-size: 18px;
+               padding-bottom: 10px;
+          }
+          a{
+               color: black;                         
+               font-weight: 700;
+               font-size: 24px;
+          }
+     }
+     .links{
+          background: linear-gradient(89.74deg, #CA2F2F 3.02%, #EE3434 110.47%);
+          border-radius: 8px;
+          position: relative;
+          .icon-links {
+               position: absolute;
+               top: 50%;
+               left: 16%;                                    
+               transform: translate(-2%, -52%);
+               svg{
+                    max-width: 100%;
+               }
+                                             
+          }
+     }
+}
+
+@media (max-width: 768px) {
+     .close-discount{
+          position: absolute;
+          background: none;
+          border: none;
+          display: block;
+          margin-top: 22px;
+          margin-left: 312px;
+      }
+}

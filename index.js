@@ -40,11 +40,11 @@ function showSlides(n) {
 
 
 //FORM
-const getFormData = () => {
-  const result = {};
-  for (const [key, value] of data) { result[key]=value }
-  return result;
-}
+// const getFormData = () => {
+//   const result = {};
+//   for (const [key, value] of data) { result[key]=value }
+//   return result;
+// }
 const form = document.querySelector("form");
 form.addEventListener("submit",(e)=>{
   e.preventDefault()
@@ -54,22 +54,42 @@ form.addEventListener("submit",(e)=>{
   const month = data.get('month');  
   const has_grade = data.get("has_grade");
   const is_grade_okey = data.get("is_grade_okey")
-  const how_much = data.get("how_much");
+  const how_much = +data.get("how_much");
   const is_judge_outside = data.get("is_judge_outside");
-  const discount = 0;
+  let discount = 0;
   const currentDate = new Date();
   const selectedDate = new Date()
   selectedDate.setDate(day);
   selectedDate.setFullYear(year);
   selectedDate.setMonth(month-1);
+
   const monthDifference = monthDiff(selectedDate,currentDate);
+
   if (monthDifference>=2) {
-    discount+1;
+    discount+=1;
   }  
-  if (has_grade===true) {
-    discount +1;
+  if (has_grade==="1") {
+    discount+=1;
   }
- 
+  if (is_judge_outside==="1"){
+    discount+=2;
+  }
+  discount = discount > 3 ? 3 : discount; 
+  const result = how_much
+  ? how_much*0.15*Number(`0.0${discount}`)
+  :  discount;
+  
+
+  if (result > discount) {  
+    console.log(result);
+    document.querySelector(`#result-discount`).innerHTML = result
+    document.querySelector(".modal-price").classList.add("opened");
+   
+  } else if (result < discount) {
+    document.querySelector(`#result`).innerHTML = result
+    document.querySelector(".modal").classList.add("opened"); 
+  }
+
 })
 
 function monthDiff(d1, d2) {
@@ -84,24 +104,26 @@ const expandable = document.querySelector(".expandable");
 
 const showExpandable = (e) => {
   if (e.target.value==="1") {
-    expandable.style.display = "block"
+    expandable.style.display = "flex"
   } else {
     expandable.style.display = "none"
   }  
 }
 const radioButtons = document.querySelectorAll('input[name="is_grade_okey"]')
 radioButtons.forEach(b=>b.addEventListener("change",showExpandable));
- // if (!day || !month || !year) {
-  //   return
-  // }
-  // if (year>currentDate.getFullYear()){
-  //   return
-  // }
-  // if (year===currentDate.getFullYear() && month>currentDate.getMonth()+1){
-  //   return
-  // }
-  // if (year === currentDate.getFullYear() && month===currentDate.getMonth()+1){
-  //   if (day>currentDate.getDate()) {
-  //   return
-  //   }
-  // }
+
+
+//modal-window-close
+
+document.querySelector(".close").addEventListener("click", (e) => {
+document.querySelector(".modal").classList.remove("opened");
+document.querySelector(".modal-price").classList.remove("opened");  
+} );
+document.querySelector(".close-discount").addEventListener("click", (e) => {
+ 
+document.querySelector(".modal-price").classList.remove("opened");  
+} );
+
+
+
+

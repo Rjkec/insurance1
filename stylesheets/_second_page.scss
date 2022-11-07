@@ -15,12 +15,13 @@
           
           .about {
                color: white;
+               width: 49%;
                .company{
                     display: flex;
                     flex-direction: row;
                     font-family: vars.$regular-family-1;
                     font-weight: 600;
-                    font-size: 60px;
+                    font-size: 57px;
                     .p-red{
                          color: #D22222;
                     }
@@ -40,7 +41,7 @@
                border-radius: 20px;
                width: 654px;
                min-height: 301px;
-               .help-background {   
+               .help-background {       
                     //width: 654px;
                     min-height: 301px;
                     background-image: url("../images/sircle_second_page-main.png"),url("../images/sircle_second_page_grey.png");
@@ -85,15 +86,25 @@
           align-items: center;
      }
      .second-page .second-page-content .about .company{
-          font-size: 45px;
+          text-align: center;
+          font-size: 40px;
+          justify-content: center;
      }
      .second-page .second-page-content{
           padding: 65px 20px 60px 20px;
      }
      .second-page .second-page-content .about .company-info p{
+          text-align: center;
           font-size: 16px;
      }
      .second-page .second-page-content .help{
-          width: 313px;
+          width: 100%;
+     }
+
+     .second-page .second-page-content .about .company-info{
+          margin-top: 50px;
+     }
+     .second-page .second-page-content .about{
+          width: 100%;
      }
 }
