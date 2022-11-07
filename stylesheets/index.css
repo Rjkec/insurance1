@@ -418,7 +418,7 @@
 }
 .fourth-page-container .background {
   height: 871px;
-  background-image: url("../images/fourth_page_bg_item_1.png"), url("../images/fourth_page_bg_item_2.png" s);
+  background-image: url("../images/fourth_page_bg_item_1.png"), url("../images/fourth_page_bg_item_2.png");
   background-repeat: no-repeat, no-repeat;
   background-position-x: 0px, 1467px;
   background-position-y: 412px, 0px;
