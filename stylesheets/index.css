@@ -16,6 +16,31 @@
   flex-direction: column;
   gap: 50px;
 }
+.full-page-container .content .header {
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.full-page-container .content .header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.full-page-container .content .header .logo p {
+  font-weight: 600;
+}
+.full-page-container .content .header .navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+.full-page-container .content .header .contacts {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 .full-page-container .content .main-page {
   display: flex;
   flex-direction: column;
