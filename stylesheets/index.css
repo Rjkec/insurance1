@@ -562,7 +562,7 @@
   transform: translate(-10px, 5px);
 }
 .fourth-page-container .content .form-box .form .form-content form .user-fieldset .options input:checked + img {
-  background: url(/images/checkbox.png);
+  background: url("../images/checkbox-black.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px 20px;
