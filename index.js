@@ -74,12 +74,12 @@ form.addEventListener("submit",(e)=>{
   if (is_judge_outside==="1"){
     discount+=2;
   }
+  
   discount = discount > 3 ? 3 : discount; 
   const result = how_much !== 0 
   ? how_much*0.15*Number(`0.0${discount}`)
   :  discount;
   
-
   if (how_much===0) {  
     console.log(result,'discount');
     document.querySelector(`#result`).innerHTML = result;
@@ -87,7 +87,9 @@ form.addEventListener("submit",(e)=>{
    
   } else  {
     console.log('price');
-    document.querySelector(`#result-price`).innerHTML = result;
+    const finalPrice = how_much*0.15
+    const discountedPrice = finalPrice - finalPrice * Number(`0.0${discount}`)
+    document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened");
   
   }

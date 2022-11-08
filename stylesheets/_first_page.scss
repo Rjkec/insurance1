@@ -89,7 +89,7 @@
                               background: linear-gradient(101.98deg, #EE3434 27.89%, #DD2626 58.75%);
                               border-radius: 8px;
                               margin-right: 14px;
-                              padding: 15px 45px;
+                              //padding: 15px 45px;
                               text-align: center;                              
                               background-size: 200% auto;
                               color: white;            
@@ -97,7 +97,9 @@
                               border-radius: 8px;
                               display: block;
                               border: none;
-                              height: 60px;
+                              p{
+                                   margin: 20px;
+                              }
                               }
 
                     
@@ -175,7 +177,24 @@
           width: 100%;
           margin-top: 10px
      }
-     
+     .full-page-container .content .main-page .button-contacts .btn-grad{
+          
+          p{
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 600;
+               font-size: 14px;
+               line-height: 17px;
+               display: flex;
+               align-items: center;
+               text-transform: uppercase;
+               //margin: 17px 39px;
+          }
+     }
+     .full-page-container .content .main-page .button-contacts .btn-grad{
+          margin-right: 0;
+
+     }
     
 }
 @media (min-width: 1700px) {

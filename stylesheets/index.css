@@ -87,7 +87,6 @@
   background: linear-gradient(101.98deg, #EE3434 27.89%, #DD2626 58.75%);
   border-radius: 8px;
   margin-right: 14px;
-  padding: 15px 45px;
   text-align: center;
   background-size: 200% auto;
   color: white;
@@ -95,7 +94,9 @@
   border-radius: 8px;
   display: block;
   border: none;
-  height: 60px;
+}
+.full-page-container .content .main-page .button-contacts .btn-grad p {
+  margin: 20px;
 }
 .full-page-container .content .main-page .button-contacts .icon-links {
   position: absolute;
@@ -152,6 +153,19 @@
     width: 100%;
     margin-top: 10px;
   }
+  .full-page-container .content .main-page .button-contacts .btn-grad p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .full-page-container .content .main-page .button-contacts .btn-grad {
+    margin-right: 0;
+  }
 }
 @media (min-width: 1700px) {
   .full-page-container {
@@ -175,6 +189,9 @@
 .second-page .second-page-content .about {
   color: white;
   width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .second-page .second-page-content .about .company {
   display: flex;
@@ -190,8 +207,16 @@
   margin-top: 90px;
 }
 .second-page .second-page-content .about .company-info p {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.second-page .second-page-content .about .company-info .company-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
 }
 .second-page .second-page-content .help {
   display: flex;
@@ -257,6 +282,14 @@
   }
   .second-page .second-page-content .about {
     width: 100%;
+  }
+  .second-page .second-page-content .about .company-info .company-header {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .second-page .second-page-content .help .help-background .help-container .help-list {
+    margin-top: 25px;
   }
 }
 .third-page {
@@ -1244,7 +1277,6 @@ footer .header .contacts {
   width: 60px;
   height: 60px;
   background: #fff;
-  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   transition: height 0.5s, width 0.5s;
@@ -1310,7 +1342,6 @@ footer .header .contacts {
   width: 32px;
   height: 2px;
   background: #555;
-  transform: translateY(-10px);
   box-shadow: 0 10px #555;
   transition: 0.5s;
 }
