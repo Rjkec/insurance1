@@ -289,9 +289,6 @@
   justify-content: space-between;
   padding: 0% 2% 8% 2%;
 }
-.third-page .third-page-container .service-container svg {
-  width: 36%;
-}
 .third-page .third-page-container .service-container .services-card-1 {
   max-width: 30%;
   height: 350px;
@@ -315,12 +312,6 @@
   background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.third-page .third-page-container .service-container .services-card-1 .flex-card-1 .svg-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 .third-page .third-page-container .service-container .services-card-2 {
   max-width: 30%;
