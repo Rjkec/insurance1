@@ -608,6 +608,9 @@
   .fourth-page-container .content .form-box .form .form-content form {
     width: 320px;
   }
+  .fourth-page-container .content .form-box .form .form-content .submit {
+    width: 295px;
+  }
 }
 .fifth-page-container {
   min-height: 100%;
