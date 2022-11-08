@@ -608,12 +608,6 @@
   .fourth-page-container .content .form-box .form .form-content form {
     width: 320px;
   }
-  .fourth-page-container .content .form-box .form .form-content button {
-    width: 287px;
-  }
-  .fourth-page-container .content .form-box .form .form-content .submit {
-    width: 295px;
-  }
 }
 .fifth-page-container {
   min-height: 100%;
@@ -1488,7 +1482,6 @@ footer .header .contacts {
   border: none;
   display: block;
   margin-top: 22px;
-  margin-left: 451px;
 }
 
 .close-discount {
