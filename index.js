@@ -81,7 +81,7 @@ form.addEventListener("submit",(e)=>{
   
 
   if (result > discount) {  
-    console.log(result);
+    console.log(result,"result uslugi");
     document.querySelector(`#result-discount`).innerHTML = result
     document.querySelector(".modal-price").classList.add("opened");
    
@@ -89,7 +89,7 @@ form.addEventListener("submit",(e)=>{
     document.querySelector(`#result`).innerHTML = result
     document.querySelector(".modal").classList.add("opened"); 
   }
-
+  
 })
 
 function monthDiff(d1, d2) {

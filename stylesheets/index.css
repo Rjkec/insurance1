@@ -1468,13 +1468,6 @@ footer .header .contacts {
   display: flex;
 }
 
-.modal-opened {
-  width: 700px;
-  height: 600px;
-  border-radius: 20px;
-  background-color: white;
-}
-
 .content-opened {
   width: 509px;
   height: 338px;
