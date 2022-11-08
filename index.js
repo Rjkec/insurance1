@@ -75,21 +75,23 @@ form.addEventListener("submit",(e)=>{
     discount+=2;
   }
   discount = discount > 3 ? 3 : discount; 
-  const result = how_much
+  const result = how_much !== 0 
   ? how_much*0.15*Number(`0.0${discount}`)
   :  discount;
   
 
-  if (result > discount) {  
-    console.log(result,"result uslugi");
-    document.querySelector(`#result-discount`).innerHTML = result
-    document.querySelector(".modal-price").classList.add("opened");
+  if (how_much===0) {  
+    console.log(result,'discount');
+    document.querySelector(`#result`).innerHTML = result;
+    document.querySelector(".modal").classList.add("opened");
    
-  } else if (result < discount) {
-    document.querySelector(`#result`).innerHTML = result
-    document.querySelector(".modal").classList.add("opened"); 
-  }
+  } else  {
+    console.log('price');
+    document.querySelector(`#result-price`).innerHTML = result;
+    document.querySelector(".modal-price").classList.add("opened");
   
+  }
+
 })
 
 function monthDiff(d1, d2) {
