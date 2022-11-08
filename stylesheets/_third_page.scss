@@ -29,7 +29,7 @@
 
                }  
                .services-card-1 { 
-                    max-width: 30%;
+                    max-width: 31%;
                     height: 350px;
                     display: flex;
                     align-items: center;
@@ -38,7 +38,7 @@
                     box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
                     border-radius: 50px;
                     .flex-card-1{
-                         width: 80%;
+                         width: 90%;
                          height: 80%;
                          display: flex;
                          flex-direction: column;
@@ -66,7 +66,7 @@
                     }
                     }
                .services-card-2 { 
-                    max-width: 30%;
+                    max-width: 31%;
                     height: 350px; 
                     display: flex;
                     align-items: center;
@@ -76,7 +76,7 @@
                     box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
                     border-radius: 50px;
                     .flex-card-2{                        
-                         width: 80%;
+                         width: 90%;
                          height: 80%;
                          display: flex;
                          flex-direction: column;
@@ -105,7 +105,7 @@
                     }
                }
                .services-card-3 { 
-                    max-width: 30%;
+                    max-width: 31%;
                     height: 350px;                    
                     display: flex;
                     align-items: center;
@@ -115,7 +115,7 @@
                     box-shadow: 0px 10px 20px rgba(197, 197, 197, 0.25);
                     border-radius: 50px;
                     .flex-card-3{
-                         width: 80%;
+                         width: 90%;
                          height: 80%;
                          display: flex;
                          flex-direction: column;
@@ -153,6 +153,7 @@
      .third-page .third-page-container .service-container{
 
           .services-card-1{
+               
                .flex-card-1 {
                     p{
                          font-size: 20px;
@@ -195,30 +196,46 @@
           gap: 30px;
      }
      .third-page .third-page-container h3{
-          font-size: 43px;
+          font-weight: 600;
+          font-size: 30px;
      }
      .third-page .third-page-container .service-container{
           width: 300px;
           .services-card-1{
-               max-width: 100%;
-               height: 400px;
+               max-width: 100%;               
+               height: 271px;
                .flex-card-1 {
+                    width: 80%;
+                  
+                    .hammer-svg{
+                         width: 56px;
+                         height: 56px;
+                         
+                    }
                     p{
-                         font-size: 20px;
+                         font-weight: 700;
+                         font-size: 18px;
                     }
                }
 
           } 
           .services-card-2 {
-               max-width: 100%;
-               height: 400px;
+               max-width: 100%;               
+               height: 271px;
 
                .flex-card-2 {
+                    width: 80%;
+                    svg{
+                         width: 56px;
+                         height: 56px;
+                    }
                     .p-header{
-                         font-size: 20px;
+                         font-weight: 700;
+                         font-size: 18px;
                     }
                     p{
-                         font-size: 16px; 
+                         font-weight: 300;
+                         font-size: 14px;
                     }
 
           }
@@ -226,11 +243,16 @@
           .services-card-3 {
                width: 300px;
                max-width: 100%;
-               height: 400px;
-
+               height: 271px;
+               svg{
+                    width: 56px;
+                    height: 56px;
+               }
                .flex-card-3 {
+                    width: 80%;
                     .p-header{
-                         font-size: 20px;
+                         font-weight: 700;
+                         font-size: 18px;
                     }
                     p{
                          font-size: 16px; 

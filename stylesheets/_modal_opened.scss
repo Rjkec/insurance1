@@ -61,7 +61,7 @@
      border: none;
      display: block;
      margin-top: 22px;
-     //margin-left: 451px;
+     margin-left: 460px;
  }
  .close-discount{
      position: absolute;
@@ -76,7 +76,7 @@
      height: 65px;
  }
 .discount{
-     padding: 50px 26px 26px 26px;
+     padding: 35px 26px 26px 26px;
 }
 .discount-block{
      display: flex;
@@ -95,16 +95,15 @@
      font-family: vars.$regular-family-1;     
      text-align: center;
      font-weight: 600;
-     font-size: 34px;
+     font-size: 20px;
  }
  
  .contacts-modal{
      display: flex;
-     align-items: center;
-     gap: 49px;
-     flex-direction: row;
-     justify-content: space-around;
+     align-items: center;     
+     flex-direction: row;     
      padding: 7% 0% 0% 0%;
+     justify-content: space-around;
      .call-us{
           p{
                font-weight: 500;
@@ -143,4 +142,39 @@
           margin-top: 22px;
           margin-left: 312px;
       }
+      .content-opened{
+          width: 295px;
+          height: 264px;
+      }
+      .contacts-modal .call-us {
+          width: 171px;
+          p{
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 16px;
+          }
+          a{
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 16px;
+               line-height: 19px;
+ 
+          }
+    }
+    .close{
+     margin-top: 25px;
+    margin-left: 255px;
+    }
+    .close-discount{
+     margin-top: 17px;
+     margin-left: 250px;
+    }
+    .info_title{
+     font-size: 25px;
+    }
+    .discount-block p{
+     font-size: 50px;
+    }
 }

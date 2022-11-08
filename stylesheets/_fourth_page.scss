@@ -37,7 +37,10 @@
                          .form-header{ 
                               display: flex;
                               flex-direction: column; 
-                              align-items: center;  
+                              align-items: center; 
+                              
+                                   
+                              }
                               .text-header{
                                    display: flex;
                                    flex-direction: row;                              
@@ -51,12 +54,11 @@
                                         -webkit-background-clip: text;
                                         -webkit-text-fill-color: transparent;
                                    }
-                              }
           
                          }
 
                         form{
-                         width: 400px;
+                         margin: 5px;
                          
                          .crash-date-fieldset{
                               border: none;
@@ -156,7 +158,10 @@
                               border-radius: 8px;
                               background: linear-gradient(101.98deg, #EE3434 27.89%, #DD2626 58.75%);
                               color: white;
-                              font-weight: 500;
+                              font-family: 'Inter';
+                              font-style: normal;                     
+                              line-height: 22px;
+                              font-weight: 600;
                               font-size: 18px;
                               margin-top: 20px;
                               margin-bottom: 40px;
@@ -169,22 +174,53 @@
 
 
 @media (max-width: 768px) {
-     .fourth-page-container .content .form-box .form{
-          width: 315px;
+     .fourth-page-container .content .form-box .form{          
+          width: 290px;
      }
      .fourth-page-container .content .form-box .form .form-content{
-          width: 297px;
+          width: 290px;
      }
-     .fourth-page-container .content .form-box .form .form-content .form-header .text-header{
+     .fourth-page-container .content .form-box .form .form-content .text-header{
+          flex-direction: column;
+          align-items: center;
+         
           font-size: 14px;
      }
      .fourth-page-container .content .form-box .form .form-content form{
-          width: 320px;
+          margin: 20px;
+          
      }
      .fourth-page-container .content .form-box .form .form-content button{
           //width: 287px;
      }
      .fourth-page-container .content .form-box .form .form-content .submit{
-         width: 295px;
+         width: 252px;
+     }
+     .fourth-page-container .content .form-box .form .form-content .form-header{
+          img{
+               width: 56px;
+               height: 42px;
+          }
+     }
+     .fourth-page-container .content .form-box .form .form-content form .crash-date-fieldset .date-input .date{
+          width: 77px;
+     }
+
+     .fourth-page-container .content .form-box .form .form-content form .crash-date-fieldset{
+          font-size: 12px;
+     }
+     .fourth-page-container .content .form-box .form .form-content form .user-fieldset{
+          font-size: 12px;
+     }
+     .fourth-page-container .content .form-box .form .form-content form .crash-date-fieldset .date-input .date{
+          margin-right:0;
+     }
+     .fourth-page-container .content .form-box .form .form-content form .user-fieldset{
+          label{
+               width: 239px;
+          }
+     }
+     .fourth-page-container .content .form-box .form .form-content form .user-fieldset .expandable input.text{
+          width: 80%;
      }
 }
