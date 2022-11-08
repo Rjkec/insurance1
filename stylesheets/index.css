@@ -84,12 +84,11 @@
   margin-top: 4%;
 }
 .full-page-container .content .main-page .button-contacts .btn-grad {
-  background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+  background: linear-gradient(101.98deg, #EE3434 27.89%, #DD2626 58.75%);
+  border-radius: 8px;
   margin-right: 14px;
   padding: 15px 45px;
   text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
   background-size: 200% auto;
   color: white;
   box-shadow: 0 0 20px #eee;
@@ -97,11 +96,6 @@
   display: block;
   border: none;
   height: 60px;
-}
-.full-page-container .content .main-page .button-contacts .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
 }
 .full-page-container .content .main-page .button-contacts .icon-links {
   position: absolute;
@@ -312,6 +306,12 @@
   background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.third-page .third-page-container .service-container .services-card-1 .flex-card-1 .svg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .third-page .third-page-container .service-container .services-card-2 {
   max-width: 30%;
