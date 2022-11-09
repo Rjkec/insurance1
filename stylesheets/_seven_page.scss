@@ -2,7 +2,7 @@
 
 .seven-page {
      min-height: 570px;
-     background-color: black;
+     background: #171717;
      .seven-page-container {
           max-width: 1380px;
           margin: auto;
@@ -38,7 +38,7 @@
                     .text-flex-container{    
                          display: flex;
                          flex-direction: column;
-                         gap: 23px; 
+                         gap: 29px; 
                          padding: 10%;
                     }
                          .p-main{
@@ -49,8 +49,13 @@
                               display: flex;
                               flex-direction: row;
                               align-items: center;
+                              a{
+                                   color: white;
+                                   font-weight: 600;
+                              }
                               p{
                                    padding-left: 30px;
+                                   color: white;
                               }
                          }
                          .links{
@@ -61,7 +66,7 @@
                                    position: absolute;
                                    display: flex;
                                    gap: 9px;
-                                   transform: translate(28%, 80%);
+                                   transform: translate(25%, 94%);
                                    align-items: center;
                                    position: absolute;
                               }
@@ -87,8 +92,11 @@
 }
 
 @media (max-width: 768px){
+     .seven-page{
+          height: 1160px;     
+     }
      .seven-page .seven-page-container{
-          height: 1010px;
+          height: 100%;
      }
      .seven-page .seven-page-container .flex-container .text{
           font-size: 42px;
@@ -100,7 +108,7 @@
      }
      .seven-page .seven-page-container .flex-container .what-to-do .list{
           flex-direction: column;
-          gap: 28px;
+          gap: 43px;
      }
      .seven-page .seven-page-container .flex-container .what-to-do .list p{
           font-size: 18px;
@@ -112,6 +120,16 @@
           width: 100%;
           a{
                display: none;
+          }
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do .links .icon-links{
+          width: 50px;
+          transform: translate(27%, 6%);     
+     }
+     .seven-page .seven-page-container .flex-container .what-to-do .links{
+          svg{
+               width: 78px;
+               height: 43px;
           }
      }
 } 

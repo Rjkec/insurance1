@@ -14,7 +14,7 @@
                gap: 6%;
                .p-header{
                     font-weight: 600;
-                    font-size: 3vw;
+                    font-size: 60px;
                     
                }
                p{
@@ -45,6 +45,13 @@
      padding-top: 3%;
      
 }
+.data-3{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 20px;
+     padding-top: 3%;
+}
 
 .map{
      max-width: 770px;
@@ -54,18 +61,27 @@
      .eight-page{
           max-height: 100%;
      }
+     .seven-page .seven-page-container{
+          height: 1090px;
+     }
      .eight-page .eight-page-container .contacts{
           flex-direction: column;
      }
      .eight-page .eight-page-container .contacts .p-header{
           font-size: 30px;
+          padding-bottom: 30px;
      }
      .eight-page .eight-page-container .contacts{
           .text{
-               padding-bottom: 9%;
+               padding-bottom: 20%;
           }
           .text-center{
-               .data{                    
+               font-weight: 500;
+               font-size: 16px;
+               .data{   
+                    svg{
+
+                    }                 
                     padding-top: 6%;
                }
           }
@@ -73,4 +89,24 @@
      .eight-page .eight-page-container .contacts p{
           font-size: 16px;
      }
-   }
+     .seven-page .seven-page-container .flex-container .text{
+          padding: 22% 3% 4% 3%;
+          
+     }
+     .eight-page .eight-page-container .contacts .text{
+          
+          .data-3{
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               gap: 20px;
+               padding-top: 18%;
+          }
+     }
+     .eight-page .eight-page-container .contacts a{
+          font-size: 16px;
+     }
+   
+
+     }
+   

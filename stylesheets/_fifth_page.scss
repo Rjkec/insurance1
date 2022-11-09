@@ -290,6 +290,9 @@
           height: 259px;
           padding-top: 20px;
      }
+     .fifth-page-container .content .content-flex .rectangle .rectangle-content .svg-2{
+          margin: 0;
+     }
      .fifth-page-container .content .contact .contact-content .contact-flex .p-header{
           font-size: 13px;
           margin: 0;
@@ -302,6 +305,7 @@
      }
      .fifth-page-container .content .content-flex .rectangle{
           border-radius: 20px;
+          padding: 0;
      }
      .fifth-page-container .content .content-flex .info{
           text-align: center;
@@ -323,5 +327,11 @@
                font-size: 13px;         
                padding-top: 7px;
           }
+     }
+     .fifth-page-container .content .content-flex .rectangle .rectangle-content{
+          flex-direction: column;
+     }
+     .fifth-page-container .content .content-flex .rectangle svg{
+          padding-right: 0;
      }
 }

@@ -955,6 +955,9 @@
     height: 259px;
     padding-top: 20px;
   }
+  .fifth-page-container .content .content-flex .rectangle .rectangle-content .svg-2 {
+    margin: 0;
+  }
   .fifth-page-container .content .contact .contact-content .contact-flex .p-header {
     font-size: 13px;
     margin: 0;
@@ -967,6 +970,7 @@
   }
   .fifth-page-container .content .content-flex .rectangle {
     border-radius: 20px;
+    padding: 0;
   }
   .fifth-page-container .content .content-flex .info {
     text-align: center;
@@ -984,6 +988,12 @@
   .fifth-page-container .content .content-flex .info p {
     font-size: 13px;
     padding-top: 7px;
+  }
+  .fifth-page-container .content .content-flex .rectangle .rectangle-content {
+    flex-direction: column;
+  }
+  .fifth-page-container .content .content-flex .rectangle svg {
+    padding-right: 0;
   }
 }
 .sixth-page {
@@ -1159,7 +1169,9 @@
 }
 @media (max-width: 768px) {
   .sixth-page .sixth-page-container .flex-container .flex-text p {
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
   }
   .sixth-page .sixth-page-container .flex-container .info-blocks {
     display: none;
@@ -1167,7 +1179,7 @@
 }
 .seven-page {
   min-height: 570px;
-  background-color: black;
+  background: #171717;
 }
 .seven-page .seven-page-container {
   max-width: 1380px;
@@ -1206,7 +1218,7 @@
 .seven-page .seven-page-container .flex-container .what-to-do .text-flex-container {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 29px;
   padding: 10%;
 }
 .seven-page .seven-page-container .flex-container .what-to-do .p-main {
@@ -1218,8 +1230,13 @@
   flex-direction: row;
   align-items: center;
 }
+.seven-page .seven-page-container .flex-container .what-to-do .list a {
+  color: white;
+  font-weight: 600;
+}
 .seven-page .seven-page-container .flex-container .what-to-do .list p {
   padding-left: 30px;
+  color: white;
 }
 .seven-page .seven-page-container .flex-container .what-to-do .links {
   background: linear-gradient(89.74deg, #CA2F2F 3.02%, #EE3434 110.47%);
@@ -1229,7 +1246,7 @@
   position: absolute;
   display: flex;
   gap: 9px;
-  transform: translate(28%, 80%);
+  transform: translate(25%, 94%);
   align-items: center;
   position: absolute;
 }
@@ -1248,8 +1265,11 @@
   }
 }
 @media (max-width: 768px) {
+  .seven-page {
+    height: 1160px;
+  }
   .seven-page .seven-page-container {
-    height: 1010px;
+    height: 100%;
   }
   .seven-page .seven-page-container .flex-container .text {
     font-size: 42px;
@@ -1261,7 +1281,7 @@
   }
   .seven-page .seven-page-container .flex-container .what-to-do .list {
     flex-direction: column;
-    gap: 28px;
+    gap: 43px;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .list p {
     font-size: 18px;
@@ -1274,6 +1294,14 @@
   }
   .seven-page .seven-page-container .flex-container .what-to-do a {
     display: none;
+  }
+  .seven-page .seven-page-container .flex-container .what-to-do .links .icon-links {
+    width: 50px;
+    transform: translate(27%, 6%);
+  }
+  .seven-page .seven-page-container .flex-container .what-to-do .links svg {
+    width: 78px;
+    height: 43px;
   }
 }
 .eight-page {
@@ -1293,7 +1321,7 @@
 }
 .eight-page .eight-page-container .contacts .p-header {
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 60px;
 }
 .eight-page .eight-page-container .contacts p {
   font-weight: 500;
@@ -1321,6 +1349,14 @@
   padding-top: 3%;
 }
 
+.data-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding-top: 3%;
+}
+
 .map {
   max-width: 770px;
 }
@@ -1329,19 +1365,40 @@
   .eight-page {
     max-height: 100%;
   }
+  .seven-page .seven-page-container {
+    height: 1090px;
+  }
   .eight-page .eight-page-container .contacts {
     flex-direction: column;
   }
   .eight-page .eight-page-container .contacts .p-header {
     font-size: 30px;
+    padding-bottom: 30px;
   }
   .eight-page .eight-page-container .contacts .text {
-    padding-bottom: 9%;
+    padding-bottom: 20%;
+  }
+  .eight-page .eight-page-container .contacts .text-center {
+    font-weight: 500;
+    font-size: 16px;
   }
   .eight-page .eight-page-container .contacts .text-center .data {
     padding-top: 6%;
   }
   .eight-page .eight-page-container .contacts p {
+    font-size: 16px;
+  }
+  .seven-page .seven-page-container .flex-container .text {
+    padding: 22% 3% 4% 3%;
+  }
+  .eight-page .eight-page-container .contacts .text .data-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 18%;
+  }
+  .eight-page .eight-page-container .contacts a {
     font-size: 16px;
   }
 }
@@ -1516,12 +1573,11 @@ footer .header .contacts {
 }
 .sixth-page .sixth-page-container .flex-container .prev, .sixth-page .sixth-page-container .flex-container .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  top: 100%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
-  color: white;
+  padding: 25px;
+  color: gray;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -1531,8 +1587,30 @@ footer .header .contacts {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.sixth-page .sixth-page-container .flex-container .prev:hover, .sixth-page .sixth-page-container .flex-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.sixth-page .sixth-page-container .flex-container .cursors {
+  display: flex;
+  justify-content: center;
+  gap: 59px;
+}
+.sixth-page .sixth-page-container .flex-container .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 20px solid #BABABA;
+}
+.sixth-page .sixth-page-container .flex-container .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 20px solid #BABABA;
+}
+.sixth-page .sixth-page-container .flex-container .arrow-left:hover {
+  border-right: 20px solid #ff0000;
+}
+.sixth-page .sixth-page-container .flex-container .arrow-right:hover {
+  border-left: 20px solid #ff0000;
 }
 .sixth-page .sixth-page-container .flex-container .text {
   color: #f2f2f2;
@@ -1549,16 +1627,6 @@ footer .header .contacts {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-.sixth-page .sixth-page-container .flex-container .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
 .sixth-page .sixth-page-container .flex-container .active, .sixth-page .sixth-page-container .flex-container .dot:hover {
   background-color: #717171;
