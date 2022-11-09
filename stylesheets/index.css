@@ -1792,6 +1792,10 @@ footer .header .contacts {
   max-width: 100%;
 }
 
+.pdf.opened {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .close-discount {
     position: absolute;

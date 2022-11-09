@@ -1,3 +1,13 @@
+
+// const docs = require("jspdf");
+// const doc = new jsPDF();
+
+
+
+
+
+// 
+
 //NAV BAR
 
 let menuToggle = document.querySelector(".menuToggle");
@@ -45,17 +55,43 @@ function showSlides(n) {
 //   for (const [key, value] of data) { result[key]=value }
 //   return result;
 // }
+
+
+// const makePDF = () => {
+//   const doc = new jspdf.jsPDF();
+//   console.log("her")
+//   const element = document.querySelector('#pdf-info');
+//   console.log(element);
+//   doc.text(element.innerText,10,10);
+//   doc.save("a4.pdf");
+
+// }
+// document.querySelector("#pdf").addEventListener("click", (e) => {    
+//      makePDF();
+// })
+
+
 const form = document.querySelector("form");
 form.addEventListener("submit",(e)=>{
   e.preventDefault()
   const data = new FormData(form);
-  const day = data.get('day');
-  const year = data.get('year');
-  const month = data.get('month');  
-  const has_grade = data.get("has_grade");
-  const is_grade_okey = data.get("is_grade_okey")
+  const day = data.get('day');  
+  const year = data.get('year');  
+  const month = data.get('month');    
+  const has_grade = data.get("has_grade"); 
+  const is_grade_okey = data.get("is_grade_okey");
   const how_much = +data.get("how_much");
   const is_judge_outside = data.get("is_judge_outside");
+
+ 
+ 
+  document.querySelector(`#day`).innerHTML = day;
+  document.querySelector(`#year`).innerHTML = year;
+  document.querySelector(`#month`).innerHTML = month;
+  const is_grade_okey_text = is_grade_okey===1 
+  ? "да" 
+  : "нет";
+  document.querySelector(`#is_grade_okey`).innerText = is_grade_okey_text;
   let discount = 0;
   const currentDate = new Date();
   const selectedDate = new Date()
@@ -93,6 +129,22 @@ form.addEventListener("submit",(e)=>{
     document.querySelector(".modal-price").classList.add("opened");
   
   }
+  const makePDF = () => {
+    const doc = new jspdf.jsPDF();
+    
+    // doc.addFileToVFS('Inter-Regular-normal.ttf', font);
+    // doc.addFont("Inter-Regular-normal.ttf", "Inter", "normal");
+    doc.setFont("Roboto-Regular");
+    console.log("her")
+    const element = document.querySelector('#pdf-info');
+    console.log(element); 
+    doc.text(element.innerText,10,10);
+    doc.save("a4.pdf");
+  
+  }
+  document.querySelector("#pdf").addEventListener("click", (e) => {    
+       makePDF();
+  })
 
 })
 

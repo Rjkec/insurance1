@@ -10,6 +10,7 @@
           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
           <!--burger menu library-->
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
       </head> 
      <body>
           <!--First page-->   
@@ -42,6 +43,9 @@
                                    </a>
                               </svg>
                          </div>
+
+                         
+                         
 
                </div>
               
@@ -383,8 +387,7 @@
                                                        </div>
                                                        
                                                                                           
-                                                  </fieldset>
-                                                                                     
+                                                  </fieldset>                                                                                    
                                              
                                              
                                              <button class="submit" type="submit">РАССЧИТАТЬ СКИДКУ</button>
@@ -406,7 +409,15 @@
                                                        <div class="discount-block">
                                                             <p id = "result"> </p> <p>%</p>
                                                             </div>
-
+                                                            <button id="pdf">скачать пдф</button>
+                                                            <div id="pdf-info">                                                                 
+                                                                 <p id="day"></p>
+                                                                 <p id="year"></p>
+                                                                 <p id="month"></p>  
+                                                                 <p>Есть ли у вас оценка страховой компании?</p>
+                                                                 <p id="is_grade_okey"></p>                                                                                                                              
+                                                            </div>
+                                                            
                                                             <div class="contacts-modal">
                                                                  <div class="call-us">
                                                                       <p>Связаться с нами</p>
@@ -989,10 +1000,15 @@
 
           </div>
           </footer>
-          <!--animation-->
+     
+     
+      <!--PDF-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+     <!--animation-->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="font.js"></script>
      <script src="index.js"></script>
-     <script>
+         <script>
           AOS.init();
      </script>
      </body>
