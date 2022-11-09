@@ -456,6 +456,10 @@
     width: 56px;
     height: 56px;
   }
+  .third-page .third-page-container .service-container .services-card-1 .flex-card-1 .square-svg {
+    width: 40px;
+    height: 40px;
+  }
   .third-page .third-page-container .service-container .services-card-1 .flex-card-1 p {
     font-weight: 700;
     font-size: 18px;
@@ -470,6 +474,10 @@
   .third-page .third-page-container .service-container .services-card-2 .flex-card-2 svg {
     width: 56px;
     height: 56px;
+  }
+  .third-page .third-page-container .service-container .services-card-2 .flex-card-2 .square-svg {
+    width: 40px;
+    height: 40px;
   }
   .third-page .third-page-container .service-container .services-card-2 .flex-card-2 .p-header {
     font-weight: 700;
@@ -490,6 +498,10 @@
   }
   .third-page .third-page-container .service-container .services-card-3 .flex-card-3 {
     width: 80%;
+  }
+  .third-page .third-page-container .service-container .services-card-3 .flex-card-3 .square-svg {
+    width: 40px;
+    height: 40px;
   }
   .third-page .third-page-container .service-container .services-card-3 .flex-card-3 .p-header {
     font-weight: 700;
