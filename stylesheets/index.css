@@ -1204,9 +1204,7 @@
 }
 @media (max-width: 768px) {
   .sixth-page .sixth-page-container .flex-container .flex-text p {
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
+    font-size: 25px;
   }
   .sixth-page .sixth-page-container .flex-container .info-blocks {
     display: none;
