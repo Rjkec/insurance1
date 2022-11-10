@@ -1,12 +1,4 @@
 
-// const docs = require("jspdf");
-// const doc = new jsPDF();
-
-
-
-
-
-// 
 
 //NAV BAR
 
@@ -16,6 +8,25 @@ menuToggle.onclick = function () {
   navigation.classList.toggle("active");
 };
 
+//Language switcher
+const switchLangToRu = () => {
+  console.log('her');
+  document.querySelector("#KZ").classList.remove("chosed-kz");
+  document.querySelector("#RU").classList.add("chosed-ru");
+}
+const switchLangToKz = () => {
+  console.log('her2');
+  document.querySelector("#RU").classList.remove("chosed-ru");
+  document.querySelector("#KZ").classList.add("chosed-kz");
+}
+
+document.querySelector("#KZ").addEventListener("click", (e) => { 
+  switchLangToKz();
+})  
+document.querySelector("#RU").addEventListener("click", (e) => {
+  switchLangToRu();
+})
+switchLangToRu();  
 
 //SLIDER
 let slideIndex = 1;
@@ -47,30 +58,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
 //FORM
-// const getFormData = () => {
-//   const result = {};
-//   for (const [key, value] of data) { result[key]=value }
-//   return result;
-// }
-
-
-// const makePDF = () => {
-//   const doc = new jspdf.jsPDF();
-//   console.log("her")
-//   const element = document.querySelector('#pdf-info');
-//   console.log(element);
-//   doc.text(element.innerText,10,10);
-//   doc.save("a4.pdf");
-
-// }
-// document.querySelector("#pdf").addEventListener("click", (e) => {    
-//      makePDF();
-// })
-
-
 const form = document.querySelector("form");
 form.addEventListener("submit",(e)=>{
   e.preventDefault()

@@ -46,6 +46,36 @@
                     align-items: center;
                     gap: 14px;
                }
+               .language{
+                    .ru{
+                         font-family: 'Inter';
+                         font-style: normal;
+                         font-weight: 500;
+                         font-size: 18px;
+                         padding: 6px;
+                         background: none;
+                         border: none;
+                         border-radius: 50px;
+                    }
+                    .kz{
+                         font-family: 'Inter';
+                         font-style: normal;
+                         font-weight: 500;
+                         font-size: 18px;
+                         padding: 6px;
+                         background: none;
+                         border: none;
+                         border-radius: 50px; 
+                    }
+               }
+               .ru.chosed-ru{
+                    color: white;
+                    background-color: #EE3434;
+               }
+               .kz.chosed-kz{
+                    color: white;
+                    background-color: #EE3434;
+               }
           }
           .main-page {
           display: flex;

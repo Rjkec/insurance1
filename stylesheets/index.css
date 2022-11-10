@@ -46,6 +46,34 @@
   align-items: center;
   gap: 14px;
 }
+.full-page-container .content .header .language .ru {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+}
+.full-page-container .content .header .language .kz {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+}
+.full-page-container .content .header .ru.chosed-ru {
+  color: white;
+  background-color: #EE3434;
+}
+.full-page-container .content .header .kz.chosed-kz {
+  color: white;
+  background-color: #EE3434;
+}
 .full-page-container .content .main-page {
   display: flex;
   flex-direction: column;
