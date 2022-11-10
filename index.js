@@ -88,6 +88,10 @@ form.addEventListener("submit",(e)=>{
   document.querySelector(`#day`).innerHTML = day;
   document.querySelector(`#year`).innerHTML = year;
   document.querySelector(`#month`).innerHTML = month;
+  const has_grade_text = has_grade===1 
+  ? "да" 
+  : "нет";
+  document.querySelector(`#has_grade`).innerText = has_grade_text;
   const is_grade_okey_text = is_grade_okey===1 
   ? "да" 
   : "нет";
