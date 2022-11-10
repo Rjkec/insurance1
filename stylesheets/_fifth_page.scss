@@ -105,15 +105,16 @@
           .contact{
                position: relative;
                display: inline-block;
+               .svg{
+                    width: 527px;
+               }
                .contact-content{
                     position: absolute;
                     width: 83%;
                     top: 43%;
                     left: 40%;
                     transform: translate(-36%, -44%);
-                    .svg{
-                         width: 500px;
-                    }
+                    
                     .contact-flex{
                          display: flex;
                          flex-direction: column;

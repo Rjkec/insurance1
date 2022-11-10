@@ -9,13 +9,11 @@ menuToggle.onclick = function () {
 };
 
 //Language switcher
-const switchLangToRu = () => {
-  console.log('her');
+const switchLangToRu = () => { 
   document.querySelector("#KZ").classList.remove("chosed-kz");
   document.querySelector("#RU").classList.add("chosed-ru");
 }
-const switchLangToKz = () => {
-  console.log('her2');
+const switchLangToKz = () => {  
   document.querySelector("#RU").classList.remove("chosed-ru");
   document.querySelector("#KZ").classList.add("chosed-kz");
 }

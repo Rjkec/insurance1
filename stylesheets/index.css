@@ -841,15 +841,15 @@
   position: relative;
   display: inline-block;
 }
+.fifth-page-container .content .contact .svg {
+  width: 527px;
+}
 .fifth-page-container .content .contact .contact-content {
   position: absolute;
   width: 83%;
   top: 43%;
   left: 40%;
   transform: translate(-36%, -44%);
-}
-.fifth-page-container .content .contact .contact-content .svg {
-  width: 500px;
 }
 .fifth-page-container .content .contact .contact-content .contact-flex {
   display: flex;
