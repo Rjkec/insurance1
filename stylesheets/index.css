@@ -1723,7 +1723,6 @@ footer .header .contacts {
 
 .content-opened {
   width: 509px;
-  height: 338px;
   background: linear-gradient(141.22deg, #FFFFFF -0.35%, #FBFBFB 77.72%);
   border-radius: 20px;
   margin: 10px;
@@ -1733,6 +1732,12 @@ footer .header .contacts {
   font-size: 3em;
   margin-left: 33px;
   margin-top: 40px;
+}
+
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .close {
@@ -1756,6 +1761,10 @@ footer .header .contacts {
 .close_svg {
   width: 65px;
   height: 65px;
+}
+
+.call-us {
+  padding-right: 60px;
 }
 
 .discount {
@@ -1819,6 +1828,40 @@ footer .header .contacts {
   display: block;
 }
 
+#pdf {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+#pdf svg {
+  padding: 7px;
+}
+#pdf .btn-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  float: left;
+  padding: 7px 10px;
+}
+
+#pdf-price {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+#pdf-price svg {
+  padding: 7px;
+}
+#pdf-price .btn-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  float: left;
+  padding: 7px 10px;
+}
+
 @media (max-width: 768px) {
   .close-discount {
     position: absolute;
@@ -1830,18 +1873,21 @@ footer .header .contacts {
   }
   .content-opened {
     width: 295px;
-    height: 264px;
+    height: 311px;
   }
-  .contacts-modal .call-us {
-    width: 171px;
+  .modal-price.opened .content-opened {
+    height: 324px;
   }
-  .contacts-modal .call-us p {
+  .contacts-modal {
+    width: 247px;
+  }
+  .contacts-modal p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
   }
-  .contacts-modal .call-us a {
+  .contacts-modal a {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -1861,6 +1907,35 @@ footer .header .contacts {
   }
   .discount-block p {
     font-size: 50px;
+  }
+  #pdf svg {
+    padding: 5px 17px 0px 0px;
+  }
+  #pdf .btn-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 27px;
+  }
+  #pdf-price svg {
+    padding: 5px 17px 0px 0px;
+  }
+  #pdf-price .btn-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 27px;
+  }
+  .contacts-modal .call-us {
+    padding-right: 23px;
+  }
+  .contacts-modal .call-us p {
+    font-size: 14px;
+  }
+  .contacts-modal .call-us a {
+    font-size: 16px;
   }
 }
 .zoom {

@@ -41,7 +41,7 @@
 
 .content-opened{
      width: 509px;
-     height: 338px;     
+     // height: 360px;     
      background: linear-gradient(141.22deg, #FFFFFF -0.35%, #FBFBFB 77.72%);
      border-radius: 20px;
      margin: 10px;
@@ -54,6 +54,11 @@
      margin-left: 33px;
      margin-top: 40px;
      
+ }
+ .discount{
+     display: flex;
+    flex-direction: column;    
+    align-items: center;
  }
  .close {
      position: absolute;
@@ -75,6 +80,9 @@
      width: 65px;
      height: 65px;
  }
+.call-us{
+     padding-right: 60px;
+}
 .discount{
      padding: 35px 26px 26px 26px;
 }
@@ -136,10 +144,38 @@
 .pdf.opened{
      display: block;
 }
-#pdf #pdf-price{
-
+#pdf{
+     background-color: white;
+     border-radius: 8px;    
+     margin-top: 20px;
+     svg{
+          padding: 7px;
+     }
+     .btn-text{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          float:left; 
+          padding: 7px 10px;
+     }
 }
-
+#pdf-price{
+     background-color: white;
+     border-radius: 8px;    
+     margin-top: 20px;
+     svg{
+          padding: 7px;
+     }
+     .btn-text{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          float:left; 
+          padding: 7px 10px;
+     }
+}
 
 
 @media (max-width: 768px) {
@@ -153,10 +189,17 @@
       }
       .content-opened{
           width: 295px;
-          height: 264px;
+          height: 311px;
       }
-      .contacts-modal .call-us {
-          width: 171px;
+      .modal-price.opened{          
+          .content-opened{
+               height: 324px;
+          }
+      }
+      .contacts-modal {          
+          width: 247px;
+          
+          
           p{
                font-family: 'Inter';
                font-style: normal;
@@ -172,6 +215,7 @@
  
           }
     }
+   
     .close{
      margin-top: 25px;
     margin-left: 255px;
@@ -186,4 +230,39 @@
     .discount-block p{
      font-size: 50px;
     }
+
+    #pdf {
+     svg{
+          padding: 5px 17px 0px 0px;
+     }
+     .btn-text{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 7px 27px;
+     }
+     }
+     #pdf-price {
+          svg{
+               padding: 5px 17px 0px 0px;
+          }
+          .btn-text{
+               font-family: 'Inter';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 14px;
+               padding: 7px 27px;
+          }
+          }
+     .contacts-modal .call-us{
+          padding-right: 23px;
+     }
+     .contacts-modal .call-us p{
+          font-size: 14px;
+     }
+     .contacts-modal .call-us a{
+          font-size: 16px;
+     }    
+     
 }
