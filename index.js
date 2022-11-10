@@ -83,19 +83,7 @@ form.addEventListener("submit",(e)=>{
   const how_much = +data.get("how_much");
   const is_judge_outside = data.get("is_judge_outside");
 
- 
- 
-  document.querySelector(`#day`).innerHTML = day;
-  document.querySelector(`#year`).innerHTML = year;
-  document.querySelector(`#month`).innerHTML = month;
-  const has_grade_text = has_grade===1 
-  ? "да" 
-  : "нет";
-  document.querySelector(`#has_grade`).innerText = has_grade_text;
-  const is_grade_okey_text = is_grade_okey===1 
-  ? "да" 
-  : "нет";
-  document.querySelector(`#is_grade_okey`).innerText = is_grade_okey_text;
+
   let discount = 0;
   const currentDate = new Date();
   const selectedDate = new Date()
@@ -135,20 +123,35 @@ form.addEventListener("submit",(e)=>{
   }
   const makePDF = () => {
     const doc = new jspdf.jsPDF();
+    const has_grade_text = has_grade===1 
+    ? "да" 
+    : "нет";
+    const is_grade_okey_text = is_grade_okey===1 
+    ? "да" 
+    : "нет";
+    const is_judge_outside_text = is_judge_outside===1 
+    ? "да" 
+    : "нет";
     
-    // doc.addFileToVFS('Inter-Regular-normal.ttf', font);
-    // doc.addFont("Inter-Regular-normal.ttf", "Inter", "normal");
+    const how_much_text = how_much>0 
+    ? `${how_much} тнг`
+    : "не указано";
+
     doc.setFont("Roboto-Regular");
-    console.log("her")
-    const element = document.querySelector('#pdf-info');
-    console.log(element); 
-    doc.text(element.innerText,10,10);
+    doc.text(`Дата: ${day}.${month}.${year}\n
+Есть ли у вас оценка страховой компании: ${has_grade_text}\n
+Устраивает ли вас оценка страховой: ${is_grade_okey_text}\n
+Оценка ущерба: ${how_much_text} \n
+Назначен ли административный суд: ${is_judge_outside_text}`,10,10);
     doc.save("a4.pdf");
   
   }
   document.querySelector("#pdf").addEventListener("click", (e) => {    
        makePDF();
-  })
+  })  
+  document.querySelector("#pdf-price").addEventListener("click", (e) => {    
+    makePDF();
+})
 
 })
 
