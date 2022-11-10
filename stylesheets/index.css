@@ -810,6 +810,7 @@
   background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 .fifth-page-container .content .content-flex .rectangle .rectangle-content {
   margin-bottom: 25px;
@@ -939,6 +940,7 @@
     background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
   }
   .fifth-page-container .content .content-flex .rectangle .rectangle-content {
     margin-bottom: 25px;
@@ -976,6 +978,7 @@
     background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
   }
   .fifth-page-container .content .content-flex .rectangle p {
     font-size: 18px;
@@ -1409,7 +1412,7 @@
   flex-direction: row;
   align-items: center;
   gap: 13px;
-  padding-top: 3%;
+  padding-top: 6%;
 }
 
 .data-3 {
@@ -1543,15 +1546,21 @@ footer .header .contacts {
 }
 
 .menu li {
+  width: 50%;
+  margin: auto;
   list-style: none;
 }
 .menu li .contacts {
-  padding: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .menu li a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 20px 0;
   font-size: 1em;
@@ -1565,6 +1574,12 @@ footer .header .contacts {
 
 .menu li a ion-icon {
   font-size: 1.5em;
+}
+
+li.language {
+  display: flex;
+  justify-content: center;
+  padding-top: 43px;
 }
 
 .navigation .menuToggle {
@@ -1605,6 +1620,37 @@ footer .header .contacts {
 
 .navigation.active .menuToggle::after {
   transform: translateY(0px) rotate(-45deg);
+}
+
+.language .ru-small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+}
+.language .kz-small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+}
+
+.ru-small.chosed-ru {
+  color: white;
+  background-color: #EE3434;
+}
+
+.kz-small.chosed-kz {
+  color: white;
+  background-color: #EE3434;
 }
 
 @media (min-width: 768px) {

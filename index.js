@@ -8,7 +8,7 @@ menuToggle.onclick = function () {
   navigation.classList.toggle("active");
 };
 
-//Language switcher
+//Language switcher for full page
 const switchLangToRu = () => { 
   document.querySelector("#KZ").classList.remove("chosed-kz");
   document.querySelector("#RU").classList.add("chosed-ru");
@@ -17,7 +17,6 @@ const switchLangToKz = () => {
   document.querySelector("#RU").classList.remove("chosed-ru");
   document.querySelector("#KZ").classList.add("chosed-kz");
 }
-
 document.querySelector("#KZ").addEventListener("click", (e) => { 
   switchLangToKz();
 })  
@@ -25,6 +24,23 @@ document.querySelector("#RU").addEventListener("click", (e) => {
   switchLangToRu();
 })
 switchLangToRu();  
+//Language switcher for full page
+const switchLangToRuSmall = () => { 
+  document.querySelector("#KZ-small").classList.remove("chosed-kz");
+  document.querySelector("#RU-small").classList.add("chosed-ru");
+}
+const switchLangToKzSmall = () => {  
+  document.querySelector("#RU-small").classList.remove("chosed-ru");
+  document.querySelector("#KZ-small").classList.add("chosed-kz");
+}
+document.querySelector("#KZ-small").addEventListener("click", (e) => { 
+  switchLangToKzSmall();
+})  
+document.querySelector("#RU-small").addEventListener("click", (e) => {
+  switchLangToRuSmall();
+})
+switchLangToRuSmall();  
+
 
 //SLIDER
 let slideIndex = 1;
