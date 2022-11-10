@@ -77,11 +77,12 @@
                          }
                          
                          .help-list{
-                              display: flex;
-                              align-items: center;
-                              gap: 13px;
+                            
                               margin-top: 10px;
-                              
+                              svg{
+                                   padding-right: 10px;
+                                   float: left;
+                              }
                               p {   
                                    word-break: break-word;
                                    //position: absolute;

@@ -166,6 +166,10 @@
   .full-page-container .content .main-page .button-contacts .btn-grad {
     margin-right: 0;
   }
+  .third-page .third-page-container .service-container .services-card-3 .flex-card-3 .p-text {
+    font-size: 14px !important;
+    font-weight: 300;
+  }
 }
 @media (min-width: 1700px) {
   .full-page-container {
@@ -248,10 +252,11 @@
   background-clip: text;
 }
 .second-page .second-page-content .help .help-background .help-container .help-list {
-  display: flex;
-  align-items: center;
-  gap: 13px;
   margin-top: 10px;
+}
+.second-page .second-page-content .help .help-background .help-container .help-list svg {
+  padding-right: 10px;
+  float: left;
 }
 .second-page .second-page-content .help .help-background .help-container .help-list p {
   word-break: break-word;
@@ -1245,6 +1250,7 @@
 .seven-page .seven-page-container .flex-container .what-to-do .list a {
   color: white;
   font-weight: 600;
+  padding: 19px;
 }
 .seven-page .seven-page-container .flex-container .what-to-do .list p {
   padding-left: 30px;
@@ -1284,11 +1290,11 @@
     height: 100%;
   }
   .seven-page .seven-page-container .flex-container .text {
-    font-size: 42px;
+    font-size: 30px;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .p-main {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .list {
@@ -1296,7 +1302,8 @@
     gap: 43px;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .list p {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 400;
     padding-left: 0px;
     text-align: center;
   }
@@ -1609,20 +1616,20 @@ footer .header .contacts {
   height: 0;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-left: 20px solid #BABABA;
+  border-left: 30px solid #BABABA;
 }
 .sixth-page .sixth-page-container .flex-container .arrow-left {
   width: 0;
   height: 0;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-right: 20px solid #BABABA;
+  border-right: 30px solid #BABABA;
 }
 .sixth-page .sixth-page-container .flex-container .arrow-left:hover {
-  border-right: 20px solid #ff0000;
+  border-right: 30px solid #ff0000;
 }
 .sixth-page .sixth-page-container .flex-container .arrow-right:hover {
-  border-left: 20px solid #ff0000;
+  border-left: 30px solid #ff0000;
 }
 .sixth-page .sixth-page-container .flex-container .text {
   color: #f2f2f2;

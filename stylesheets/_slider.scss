@@ -45,21 +45,21 @@
   height: 0; 
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-left: 20px solid #BABABA;
+  border-left: 30px solid #BABABA;
 }
 .arrow-left {
   width: 0; 
   height: 0; 
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;  
-  border-right:20px solid #BABABA;
+  border-right:30px solid #BABABA;
 }
 /* On hover, add a black background color with a little bit see-through */
 .arrow-left:hover{
-  border-right:20px solid #ff0000;
-} 
+  border-right:30px solid #ff0000;
+}   
 .arrow-right:hover {
- border-left: 20px solid #ff0000;
+ border-left: 30px solid #ff0000;
 }
 
 /* Caption text */
