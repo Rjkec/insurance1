@@ -375,6 +375,7 @@
   background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: -45px;
 }
 .third-page .third-page-container .service-container .services-card-2 .flex-card-2 p {
   font-size: 18px;
@@ -409,6 +410,7 @@
   background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: -45px;
 }
 .third-page .third-page-container .service-container .services-card-3 .flex-card-3 .p-text {
   font-size: 18px;
@@ -697,7 +699,7 @@
     height: 42px;
   }
   .fourth-page-container .content .form-box .form .form-content form .crash-date-fieldset .date-input .date {
-    width: 77px;
+    width: 68px;
   }
   .fourth-page-container .content .form-box .form .form-content form .crash-date-fieldset {
     font-size: 12px;
@@ -839,6 +841,12 @@
   font-weight: 600;
   font-size: 24px;
   margin-top: 10px;
+}
+.fifth-page-container .content .contact .contact-content .contact-flex .p-header-2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 .fifth-page-container .content .contact .contact-content .contact-flex .contacts {
@@ -969,18 +977,26 @@
   }
   .fifth-page-container .content .content-flex .svg {
     width: 320px;
-    height: 259px;
+    height: 300px;
     padding-top: 20px;
   }
   .fifth-page-container .content .content-flex .rectangle .rectangle-content .svg-2 {
     margin: 0;
   }
   .fifth-page-container .content .contact .contact-content .contact-flex .p-header {
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 600;
     margin: 0;
   }
+  .fifth-page-container .content .contact .contact-content .contact-flex .p-header-2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 20px;
+  }
   .fifth-page-container .content .contact .contact-content .contact-flex p {
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 400;
   }
   .fifth-page-container .content .contact .contact-content .contact-flex .contacts a {
     font-size: 16px;
@@ -1004,7 +1020,6 @@
   }
   .fifth-page-container .content .content-flex .info p {
     font-size: 13px;
-    padding-top: 7px;
   }
   .fifth-page-container .content .content-flex .rectangle .rectangle-content {
     flex-direction: column;
