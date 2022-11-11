@@ -41,12 +41,18 @@
                               // left: 264px;
                               // top: 264px;
                          }
+                         .figure{
+                              background-color: #380D0D;
+                              -webkit-clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
+                              clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
+                         }
                          .block-text{
                               min-width: 80%;
                               position: absolute;
                               top: 48%;
                               left: 50%;
                               transform: translate( -50%, -50% );
+                             
                               .p-strong{
                                    padding-bottom: 20px;
                                    font-weight: 700;

@@ -1105,6 +1105,11 @@
 .sixth-page .sixth-page-container .flex-container .info-blocks .block1 img {
   max-width: 94%;
 }
+.sixth-page .sixth-page-container .flex-container .info-blocks .block1 .figure {
+  background-color: #380D0D;
+  -webkit-clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
+  clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
+}
 .sixth-page .sixth-page-container .flex-container .info-blocks .block1 .block-text {
   min-width: 80%;
   position: absolute;
