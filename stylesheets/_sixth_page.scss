@@ -1,7 +1,7 @@
 @use 'vars';
 
 .sixth-page{
-     max-height: 776px;
+     max-height: 886px;
      background: linear-gradient(343.43deg, #FEFEFE 16.94%, #EFEFEF 96.46%);
      background-size: cover;
      .sixth-page-container{
@@ -92,6 +92,10 @@
                               border-radius: 50px;
                               -webkit-transform: perspective(200px) rotatex(3deg);
                               box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                              background-image: url("../images/circle-bg.svg");
+                              background-repeat: no-repeat;
+                              background-position-x: 100%;
+                              background-position-y: 100%;
                           }
                          .block2-text{
                               min-width: 80%;
@@ -106,7 +110,7 @@
                                    font-size: 20px;
                               }
                               p{
-                                   font-size: 15px;
+                                   font-size: 18px;
                               }
                               .p-red{
                                    font-weight: 700;
@@ -145,12 +149,10 @@
                                    padding-bottom: 20px;
                                    font-weight: 700;
                                    font-size: 20px;
-                                   p{
-                                        font-size: 20px;
-                                   }
+                                   
                               }
                               p{
-                                   font-size: 15px;
+                                   font-size: 18px;
                               }
                               .p-red{
                                    font-weight: 700;

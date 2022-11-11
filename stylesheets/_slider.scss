@@ -4,10 +4,12 @@
 
 .slideshow-container{
   .mySlides{
+    padding-top: 50px;
+    padding-bottom: 50px;
     .block1{
       position: relative;
       display: inline-block;
-      padding: 20px;
+      padding: 6px;
       img{
            max-width: 94%;;                             
            // left: 264px;
@@ -33,14 +35,14 @@
            .p-strong{
                 padding-bottom: 20px;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 12px;
            }
            p{
-                font-size: 10px;
+                font-size: 12px;
            }
            .p-red{
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 12px;
                 background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -48,8 +50,95 @@
            }
           
       }
+    }
+    .block2{
+      position: relative;
+      display: inline-block;
+      img{ 
+           max-width: 94%;;                              
+           // left: 750px;
+           // top: 264px;
+      }
+      #bg-2 {
+          width: 303px;
+          height: 308px;           
+          border-radius: 50px;
+          -webkit-transform: perspective(200px) rotatex(3deg);
+          box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+          background-image: url("../images/circle-bg.svg");
+          background-repeat: no-repeat;
+          background-position-x: 150%;
+          background-position-y: 150%;
+       }
+      .block2-text{
+           min-width: 80%;
+           position: absolute;
+           top: 40%;
+           left: 49%;
+           transform: translate(-50%, -50%);
+          
+           .p-strong{
+                padding-bottom: 20px;
+                font-weight: 700;
+                font-size: 16px;
+           }
+           p{
+                font-size: 14px;
+           }
+           .p-red{
+                font-weight: 700;
+                font-size: 16px;
+                background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-top: 20px;
+           }
+      }
  }
+ .block3{
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+
+  img{
+       display: block;
+       max-width: 94%;; 
+       // left: 1214px;
+       // top: 254px;
   }
+  #bg-3 {
+      width: 303px;
+      height: 308px;                            
+       border-radius: 50px;
+       -webkit-transform: perspective(200px) rotateY(-3deg);
+       box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+   }
+  .block3-text {
+       min-width: 80%;
+       position: absolute;
+       top: 40%;
+      left: 51%;
+       transform: translate(-50%, -50%);
+       .p-strong{
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: 16px;           
+       }
+       p{
+            font-size: 14px;
+       }
+       .p-red{
+            font-weight: 700;
+            font-size: 16px;
+            background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-top: 20px;
+       }
+  }
+}
+ 
+}
 }
 /* Slideshow container */
 .slideshow-container {
