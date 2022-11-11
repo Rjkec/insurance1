@@ -119,7 +119,7 @@ form.addEventListener("submit",(e)=>{
     const finalPrice = how_much*0.15
     const discountedPrice = how_much - (finalPrice + how_much * Number(`0.0${discount}`))
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
-    document.querySelector(".modal-price").classList.add("opened");
+    document.querySelector(".modal-price").classList.add("opened"); 
   
   }
   const makePDF = () => {
