@@ -35,17 +35,22 @@
                     .block1{
                          position: relative;
                          display: inline-block;
-                         
+                         padding: 20px;
                          img{
                               max-width: 94%;;                             
                               // left: 264px;
                               // top: 264px;
                          }
-                         .figure{
-                              background-color: #380D0D;
-                              -webkit-clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
-                              clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
-                         }
+                        
+                          #bg-1 {
+                              width: 467px;
+                              height: 407px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
+                          
                          .block-text{
                               min-width: 80%;
                               position: absolute;
@@ -69,6 +74,7 @@
                                    -webkit-text-fill-color: transparent;
                                    padding-top: 20px;
                               }
+                             
                          }
                     }
                     .block2{
@@ -79,12 +85,21 @@
                               // left: 750px;
                               // top: 264px;
                          }
+                         #bg-2 {
+                              width: 467px;
+                              height: 407px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotatex(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
                          .block2-text{
                               min-width: 80%;
                               position: absolute;
                               top: 39%;
                               left: 53%;
                               transform: translate(-50%, -50%);
+                             
                               .p-strong{
                                    padding-bottom: 20px;
                                    font-weight: 700;
@@ -106,12 +121,20 @@
                     .block3{
                          position: relative;
                          display: inline-block;
+                         padding: 20px;
                          img{
                               display: block;
                               max-width: 94%;; 
                               // left: 1214px;
                               // top: 254px;
                          }
+                         #bg-3 {
+                              width: 467px;
+                              height: 407px;                            
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(-3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
                          .block3-text {
                               min-width: 80%;
                               position: absolute;
