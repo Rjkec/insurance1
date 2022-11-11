@@ -1540,7 +1540,7 @@
 }
 @media (max-width: 768px) {
   .seven-page {
-    height: 1000px;
+    height: 996px;
   }
   .seven-page .seven-page-container {
     height: 100%;
@@ -1564,7 +1564,7 @@
     text-align: center;
   }
   .seven-page .seven-page-container .flex-container .what-to-do {
-    height: 844px;
+    height: 100%;
     width: 100%;
   }
   .seven-page .seven-page-container .flex-container .what-to-do a {
@@ -1573,6 +1573,9 @@
   .seven-page .seven-page-container .flex-container .what-to-do .links .icon-links {
     width: 50px;
     transform: translate(27%, 6%);
+  }
+  .seven-page .seven-page-container .flex-container .what-to-do .links {
+    margin-top: 30px;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .links svg {
     width: 78px;
