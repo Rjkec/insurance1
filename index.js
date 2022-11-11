@@ -107,7 +107,7 @@ form.addEventListener("submit",(e)=>{
   
   discount = discount > 3 ? 3 : discount; 
   const result = how_much !== 0 
-  ? how_much*0.15*Number(`0.0${discount}`)
+  ? how_much - (how_much*0.15*Number(`0.0${discount}`))
   :  discount;
   
   if (how_much===0) {  
@@ -115,10 +115,9 @@ form.addEventListener("submit",(e)=>{
     document.querySelector(`#result`).innerHTML = result;
     document.querySelector(".modal").classList.add("opened");
    
-  } else  {
-    console.log('price');
+  } else  {    
     const finalPrice = how_much*0.15
-    const discountedPrice = finalPrice - finalPrice * Number(`0.0${discount}`)
+    const discountedPrice = how_much - (finalPrice + how_much * Number(`0.0${discount}`))
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened");
   

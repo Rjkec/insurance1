@@ -1,7 +1,7 @@
 @use 'vars';
 
 .sixth-page{
-     max-height: 776px;
+     max-height: 886px;
      background: linear-gradient(343.43deg, #FEFEFE 16.94%, #EFEFEF 96.46%);
      background-size: cover;
      .sixth-page-container{
@@ -35,22 +35,27 @@
                     .block1{
                          position: relative;
                          display: inline-block;
-                         
+                         padding: 20px;
                          img{
                               max-width: 94%;;                             
                               // left: 264px;
                               // top: 264px;
                          }
-                         .figure{
-                              background-color: #380D0D;
-                              -webkit-clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
-                              clip-path: polygon(14% 0, 90% 8%, 100% 100%, 0% 100%);
-                         }
+                        
+                          #bg-1 {
+                              width: 429px;
+                              height: 400px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
+                          
                          .block-text{
                               min-width: 80%;
                               position: absolute;
-                              top: 48%;
-                              left: 50%;
+                              top: 40%;
+                              left: 48%;
                               transform: translate( -50%, -50% );
                              
                               .p-strong{
@@ -59,7 +64,53 @@
                                    font-size: 20px;
                               }
                               p{
-                                   font-size: 15px;
+                                   font-size: 18px;
+                              }
+                              .p-red{
+                                   font-weight: 700;
+                                   font-size: 20px;
+                                   background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+                                   -webkit-background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                   padding-top: 20px;
+                              }
+                             
+                         }
+                    }
+                    .block2{
+                         position: relative;
+                         display: inline-block;
+                         img{ 
+                              max-width: 94%;;                              
+                              // left: 750px;
+                              // top: 264px;
+                         }
+                         #bg-2 {
+                              width: 436px;
+                              height: 384px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotatex(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                              background-image: url("../images/circle-bg.svg");
+                              background-repeat: no-repeat;
+                              background-position-x: 100%;
+                              background-position-y: 100%;
+                          }
+                         .block2-text{
+                              min-width: 80%;
+                              position: absolute;
+                              top: 31%;
+                              left: 49%;
+                              transform: translate(-50%, -50%);
+                             
+                              .p-strong{
+                                   padding-bottom: 20px;
+                                   font-weight: 700;
+                                   font-size: 20px;
+                              }
+                              p{
+                                   font-size: 18px;
                               }
                               .p-red{
                                    font-weight: 700;
@@ -71,6 +122,105 @@
                               }
                          }
                     }
+                    .block3{
+                         position: relative;
+                         display: inline-block;
+                         padding: 20px;
+                         img{
+                              display: block;
+                              max-width: 94%;; 
+                              // left: 1214px;
+                              // top: 254px;
+                         }
+                         #bg-3 {
+                              width: 429px;
+                              height: 400px;                            
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(-3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
+                         .block3-text {
+                              min-width: 80%;
+                              position: absolute;
+                              top: 35%;
+                              left: 53%;
+                              transform: translate(-50%, -50%);
+                              .p-strong{
+                                   padding-bottom: 20px;
+                                   font-weight: 700;
+                                   font-size: 20px;
+                                   
+                              }
+                              p{
+                                   font-size: 18px;
+                              }
+                              .p-red{
+                                   font-weight: 700;
+                                   font-size: 20px;
+                                   background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+                                   -webkit-background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                   padding-top: 20px;
+                              }
+                         }
+                    }
+
+                    
+               }
+               
+          }
+     }
+}
+               .info-blocks{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;  
+                    padding-top: 60px;   
+                    .block1{
+                         position: relative;
+                         display: inline-block;
+                         padding: 20px;
+                         img{
+                              max-width: 94%;;                             
+                              // left: 264px;
+                              // top: 264px;
+                         }
+                        
+                          #bg-1 {
+                              width: 429px;
+                              height: 400px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
+                          
+                         .block-text{
+                              min-width: 80%;
+                              position: absolute;
+                              top: 40%;
+                              left: 48%;
+                              transform: translate( -50%, -50% );
+                             
+                              .p-strong{
+                                   padding-bottom: 20px;
+                                   font-weight: 700;
+                                   font-size: 20px;
+                              }
+                              p{
+                                   font-size: 18px;
+                              }
+                              .p-red{
+                                   font-weight: 700;
+                                   font-size: 20px;
+                                   background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
+                                   -webkit-background-clip: text;
+                                   -webkit-text-fill-color: transparent;
+                                   padding-top: 20px;
+                              }
+                             
+                         }
+                    }
                     .block2{
                          position: relative;
                          display: inline-block;
@@ -79,12 +229,21 @@
                               // left: 750px;
                               // top: 264px;
                          }
+                         #bg-2 {
+                              width: 436px;
+                              height: 384px;
+                              
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotatex(3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
                          .block2-text{
                               min-width: 80%;
                               position: absolute;
-                              top: 39%;
-                              left: 53%;
+                              top: 31%;
+                              left: 49%;
                               transform: translate(-50%, -50%);
+                             
                               .p-strong{
                                    padding-bottom: 20px;
                                    font-weight: 700;
@@ -106,16 +265,24 @@
                     .block3{
                          position: relative;
                          display: inline-block;
+                         padding: 20px;
                          img{
                               display: block;
                               max-width: 94%;; 
                               // left: 1214px;
                               // top: 254px;
                          }
+                         #bg-3 {
+                              width: 429px;
+                              height: 400px;                            
+                              border-radius: 50px;
+                              -webkit-transform: perspective(200px) rotateY(-3deg);
+                              box-shadow: 0px 10px 50px rgba(132, 132, 132, 0.25);
+                          }
                          .block3-text {
                               min-width: 80%;
                               position: absolute;
-                              top: 40%;
+                              top: 35%;
                               left: 53%;
                               transform: translate(-50%, -50%);
                               .p-strong{
@@ -142,8 +309,79 @@
 
                     
                }
-               
+@media (max-width: 1441px){
+
+.sixth-page .sixth-page-container .flex-container{
+     .info-blocks{          
+          .block1{               
+               img{
+               }
+              
+                #bg-1 {
+                    width: 329px;
+                    height: 320px;
+                   
+                }
+                
+               .block-text{
+                   
+                    .p-strong{
+                         font-size: 15px;
+                    }
+                    p{
+                         font-size: 13px;
+                    }
+                    .p-red{
+                         font-size: 15px;
+                    }
+                   
+               }
           }
+          .block2{
+               
+               img{ 
+               }
+               #bg-2 {
+                    width: 356px;
+                    height: 304px;
+                }
+               .block2-text{
+                   
+                    .p-strong{
+                         font-size: 15px;
+                    }
+                    p{
+                         font-size: 13px;
+                    }
+                    .p-red{
+                         font-size: 15px;
+                    }
+               }
+          }
+          .block3{
+               img{
+               }
+               #bg-3 {
+                    width: 329px;
+                    height: 320px;
+                }
+               .block3-text {
+                    top: 37%;
+                    left: 55%;
+                    .p-strong{
+                         font-size: 15px;                         
+                    }
+                    p{
+                         font-size: 15px;
+                    }
+                    .p-red{
+                         font-size: 15px;
+                    }
+               }
+          }
+
+          
+     }
      }
 }
 
@@ -151,53 +389,80 @@
      .sixth-page .sixth-page-container .flex-container .flex-text{
           font-size: 50px;
      }
-     .sixth-page .sixth-page-container .flex-container .info-blocks .block1 .block-text{
-
-          .p-strong{
-               
-               font-size: 15px;
-          }
-          p{
-               font-size: 10px;
-          }
-          .p-red{
-              
-               font-size: 15px;
+     .sixth-page .sixth-page-container .flex-container{
+          .info-blocks{          
+               .block1{               
+                    img{
+                    }
+                   
+                    #bg-1 {
+                         width: 260px;
+                         height: 246px;
+                        
+                    }
+                     
+                    .block-text{
+                        
+                         .p-strong{
+                              font-size: 10px;
+                         }
+                         p{
+                              font-size: 8px;
+                         }
+                         .p-red{
+                              font-size: 10px;
+                         }
+                        
+                    }
+               }
+               .block2{
+                    
+                    img{ 
+                    }
+                    #bg-2 {
+                         width: 244px;
+                         height: 244px;
+                     }
+                    .block2-text{
+                        
+                         .p-strong{
+                              font-size: 10px;
+                         }
+                         p{
+                              font-size: 8px;
+                         }
+                         .p-red{
+                              font-size: 10px;
+                         }
+                    }
+               }
+               .block3{
+                    img{
+                    }
+                    #bg-3 {
+                         width: 260px;
+                         height: 246px;
+                     }
+                    .block3-text {
+                         top: 37%;
+                         left: 55%;
+                         .p-strong{
+                              font-size: 10px;                         
+                         }
+                         p{
+                              font-size: 8px;
+                         }
+                         .p-red{
+                              font-size: 10px;
+                         }
+                    }
+               }
+     
                
           }
      }
-     .sixth-page .sixth-page-container .flex-container .info-blocks .block2 .block2-text{
-          .p-strong{
-               
-               font-size: 15px;
-          }
-          p{
-               font-size: 10px;
-          }
-          .p-red{
-               
-               font-size: 15px;
-              
-          }
-
-     }
-     .sixth-page .sixth-page-container .flex-container .info-blocks .block3 .block3-text{
-          .p-strong{
-               
-               font-size: 15px;
-          }
-          p{
-               font-size: 10px;
-          }
-          .p-red{
-               
-               font-size: 15px;
-              
-          }
-
-     }
-
 }
+
 @media (min-width: 768px){
      .slideshow-container{
           display: none;
