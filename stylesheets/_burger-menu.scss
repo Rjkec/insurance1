@@ -74,18 +74,19 @@ li.language{
 .navigation .menuToggle::before {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 2px;
+  width: 50px;
+  margin-bottom: 3px;
+  height: 5px;
   background: #555;
   //transform: translateY(-10px);
-  box-shadow: 0 10px #555;
+  //box-shadow: 0 10px #555;
   transition: 0.5s;
 }
 .navigation .menuToggle::after {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 2px;
+  width: 50px;
+  height: 5px;
   background: #555;
   transform: translateY(10px);
   transition: 0.5s;

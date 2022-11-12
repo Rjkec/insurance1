@@ -62,7 +62,7 @@
                     background-position-y: 0%, 100%;                    
                     background-repeat: no-repeat, no-repeat; 
                     .help-container {
-                         margin: 34px 34px 34px 29px;
+                         margin: 50px 34px 50px 29px;
                          .help-header{
                               margin-bottom: 27px;
                               p {
@@ -127,6 +127,7 @@
           text-align: center;
      }
      .second-page .second-page-content .help .help-background .help-container .help-list{
-          margin-top: 25px;
+          padding-bottom: 25px;
      }
+     
 }

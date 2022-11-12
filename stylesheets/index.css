@@ -266,7 +266,7 @@
   background-repeat: no-repeat, no-repeat;
 }
 .second-page .second-page-content .help .help-background .help-container {
-  margin: 34px 34px 34px 29px;
+  margin: 50px 34px 50px 29px;
 }
 .second-page .second-page-content .help .help-background .help-container .help-header {
   margin-bottom: 27px;
@@ -322,7 +322,7 @@
     text-align: center;
   }
   .second-page .second-page-content .help .help-background .help-container .help-list {
-    margin-top: 25px;
+    padding-bottom: 25px;
   }
 }
 .third-page {
@@ -1026,7 +1026,7 @@
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 9px;
   }
   .fifth-page-container .content .contact .contact-content .contact-flex p {
     font-size: 14px;
@@ -1060,6 +1060,9 @@
   }
   .fifth-page-container .content .content-flex .rectangle svg {
     padding-right: 0;
+  }
+  .fifth-page-container .content .content-flex .rectangle .rectangle-content svg {
+    padding-top: 14px;
   }
 }
 .sixth-page {
@@ -1808,18 +1811,18 @@ li.language {
 .navigation .menuToggle::before {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 2px;
+  width: 50px;
+  margin-bottom: 3px;
+  height: 5px;
   background: #555;
-  box-shadow: 0 10px #555;
   transition: 0.5s;
 }
 
 .navigation .menuToggle::after {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 2px;
+  width: 50px;
+  height: 5px;
   background: #555;
   transform: translateY(10px);
   transition: 0.5s;

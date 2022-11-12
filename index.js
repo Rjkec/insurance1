@@ -106,13 +106,9 @@ form.addEventListener("submit",(e)=>{
   }
   
   discount = discount > 3 ? 3 : discount; 
-  const result = how_much !== 0 
-  ? how_much - (how_much*0.15*Number(`0.0${discount}`))
-  :  discount;
-  
-  if (how_much===0) {  
-    console.log(result,'discount');
-    document.querySelector(`#result`).innerHTML = result;
+    
+  if (how_much===0) {   
+    document.querySelector(`#result`).innerHTML = discount;
     document.querySelector(".modal").classList.add("opened");
    
   } else  {    
