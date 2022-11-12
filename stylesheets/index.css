@@ -1506,7 +1506,7 @@
   flex-direction: row;
   align-items: center;
 }
-.seven-page .seven-page-container .flex-container .what-to-do .list a {
+.seven-page .seven-page-container .flex-container .what-to-do .list .tel {
   color: white;
   font-weight: 600;
   padding: 19px;
@@ -1523,7 +1523,7 @@
   position: absolute;
   display: flex;
   gap: 9px;
-  transform: translate(25%, 94%);
+  transform: translate(16%, 65%);
   align-items: center;
   position: absolute;
 }
@@ -1570,7 +1570,7 @@
     height: 100%;
     width: 100%;
   }
-  .seven-page .seven-page-container .flex-container .what-to-do a {
+  .seven-page .seven-page-container .flex-container .what-to-do .tel {
     display: none;
   }
   .seven-page .seven-page-container .flex-container .what-to-do .links .icon-links {
