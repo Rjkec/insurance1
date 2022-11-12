@@ -28,21 +28,21 @@
       .block-text{
            min-width: 80%;
            position: absolute;
-           top: 40%;
-           left: 48%;
+           top: 50%;
+            left: 48%;
            transform: translate( -50%, -50% );
           
            .p-strong{
                 padding-bottom: 20px;
                 font-weight: 700;
-                font-size: 12px;
+                font-size: 16px;
            }
            p{
-                font-size: 12px;
+                font-size: 14px;
            }
            .p-red{
-                font-weight: 700;
-                font-size: 12px;
+                font-weight:700;
+                font-size: 16px;
                 background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

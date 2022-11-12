@@ -1120,7 +1120,7 @@
   min-width: 80%;
   position: absolute;
   top: 40%;
-  left: 48%;
+  left: 52%;
   transform: translate(-50%, -50%);
 }
 .sixth-page .sixth-page-container .flex-container .info-blocks .block1 .block-text .p-strong {
@@ -1909,21 +1909,21 @@ li.language {
 .sixth-page .sixth-page-container .flex-container .slideshow-container .mySlides .block1 .block-text {
   min-width: 80%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
 }
 .sixth-page .sixth-page-container .flex-container .slideshow-container .mySlides .block1 .block-text .p-strong {
   padding-bottom: 20px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
 }
 .sixth-page .sixth-page-container .flex-container .slideshow-container .mySlides .block1 .block-text p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .sixth-page .sixth-page-container .flex-container .slideshow-container .mySlides .block1 .block-text .p-red {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
   background: linear-gradient(110.89deg, #380D0D -65.39%, #EE3434 89.78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
