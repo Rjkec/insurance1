@@ -75,8 +75,8 @@ li.language{
   content: "";
   position: absolute;
   width: 50px;
-  margin-bottom: 3px;
-  height: 5px;
+  margin-bottom: 13px;
+  height: 3px;
   background: #555;
   //transform: translateY(-10px);
   //box-shadow: 0 10px #555;
@@ -86,17 +86,17 @@ li.language{
   content: "";
   position: absolute;
   width: 50px;
-  height: 5px;
+  height: 3px;
   background: #555;
   transform: translateY(10px);
   transition: 0.5s;
 }
 .navigation.active .menuToggle::before {
-  transform: translateY(0px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
   box-shadow: 0 0 #555;
 }
 .navigation.active .menuToggle::after {
-  transform: translateY(0px) rotate(-45deg);
+  transform: translateY(3px) rotate(-45deg);
 }
 
 .language{
