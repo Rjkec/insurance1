@@ -30,9 +30,11 @@
   width: 21%;
 }
 .full-page-container .content .header .logo p {
+  font-size: 22px;
   font-weight: 600;
 }
 .full-page-container .content .header .logo img {
+  margin-right: 20px;
   width: 20%;
 }
 .full-page-container .content .header .navbar {
@@ -40,6 +42,9 @@
   flex-direction: row;
   gap: 21px;
   align-items: center;
+}
+.full-page-container .content .header .navbar a {
+  font-size: 18px;
 }
 .full-page-container .content .header .contacts {
   display: flex;
@@ -112,6 +117,7 @@
   margin-top: 4%;
 }
 .full-page-container .content .main-page .button-contacts .btn-grad {
+  width: 357px;
   background: linear-gradient(101.98deg, #EE3434 27.89%, #DD2626 58.75%);
   border-radius: 8px;
   margin-right: 14px;
@@ -192,11 +198,15 @@
     text-transform: uppercase;
   }
   .full-page-container .content .main-page .button-contacts .btn-grad {
+    width: 290px;
     margin-right: 0;
   }
   .third-page .third-page-container .service-container .services-card-3 .flex-card-3 .p-text {
     font-size: 14px !important;
     font-weight: 300;
+  }
+  .full-page-container .content .main-page .button-contacts .btn-grad p {
+    justify-content: center;
   }
 }
 @media (min-width: 1700px) {
@@ -236,6 +246,7 @@
   color: #D22222;
 }
 .second-page .second-page-content .about .company-info {
+  width: 78%;
   margin-top: 90px;
 }
 .second-page .second-page-content .about .company-info p {
@@ -244,6 +255,15 @@
   font-family: "Raleway", sans-serif;
 }
 .second-page .second-page-content .about .company-info .company-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.second-page .second-page-content .about .company-info .company-header-last {
+  display: block;
+  margin-top: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -321,8 +341,17 @@
     padding-bottom: 30px;
     text-align: center;
   }
+  .second-page .second-page-content .about .company-info .company-header-last {
+    display: block;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0;
+  }
   .second-page .second-page-content .help .help-background .help-container .help-list {
     padding-bottom: 25px;
+  }
+  .second-page .second-page-content .about {
+    align-items: center;
   }
 }
 .third-page {
@@ -980,6 +1009,9 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
   }
+  .fifth-page-container .content .content-flex .rectangle .rectangle-content .regular {
+    display: block;
+  }
   .fifth-page-container .content .content-flex .rectangle p {
     font-size: 18px;
     font-weight: 600;
@@ -1509,6 +1541,7 @@
 .seven-page .seven-page-container .flex-container .what-to-do .list .tel {
   color: white;
   font-weight: 600;
+  font-size: 24px;
   padding: 19px;
 }
 .seven-page .seven-page-container .flex-container .what-to-do .list p {

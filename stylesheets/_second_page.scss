@@ -30,13 +30,24 @@
                     }
                }
                .company-info{
+                    width: 78%;
                     margin-top: 90px;                    
                     p {
                     font-weight: 600;
                     font-size: 18px;
                     font-family: "Raleway", sans-serif;                       
                     }
-                    .company-header{
+                    .company-header{                                             
+                         font-family: "Raleway", sans-serif;
+                         font-style: normal;
+                         font-weight: 500;
+                         font-size: 18px;
+                         line-height: 21px;;
+
+                    }
+                    .company-header-last{
+                         display: block;
+                         margin-top: 20px;                     
                          font-family: "Raleway", sans-serif;
                          font-style: normal;
                          font-weight: 500;
@@ -116,6 +127,7 @@
      }
 
      .second-page .second-page-content .about .company-info{
+          
           margin-top: 50px;
      }
      .second-page .second-page-content .about{
@@ -126,8 +138,17 @@
           padding-bottom: 30px;
           text-align: center;
      }
+     .second-page .second-page-content .about .company-info .company-header-last{
+          display: block;
+          padding-bottom: 30px;
+          text-align: center;
+          margin: 0;
+     }
      .second-page .second-page-content .help .help-background .help-container .help-list{
           padding-bottom: 25px;
+     }
+     .second-page .second-page-content .about{
+          align-items: center;     
      }
      
 }
