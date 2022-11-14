@@ -6,8 +6,8 @@
           height: 100%;
           background-image: url("../images/fourth_page_bg_item_1.png"),url("../images/fourth_page_bg_item_2.png");
           background-repeat: no-repeat,no-repeat;
-          background-position-x: 0px, 1467px;
-          background-position-y: 412px, 0px;
+          background-position-x: 0%, 100%;
+          background-position-y: 100%, 0%;
 
      }    
      .content {
@@ -57,7 +57,46 @@
 
                         form{
                          margin: 5px;
-                         
+                         .personal-data{
+                              border: none;
+                              padding: 0;
+                              margin: 0;
+                              font-family: "Inter";
+                              font-style: normal;
+                              font-weight: 200;
+                              font-size: 14px;
+                              
+                              .name{
+                                   padding-top: 10px;
+                                   .name-header{                                        
+                                        display: block;
+                                   }
+                                   .input-name{                                        
+                                        background: #E9E9E9;
+                                        border: none;
+                                        border-radius: 8px;
+                                        width: 95%;
+                                        height: 44px;
+                                        margin-right: 10px;
+                                        margin-top: 10px;
+                                   }
+                              }
+                              .car{
+                                   padding-top: 10px;
+                                   .car-header{                                        
+                                        display: block;
+                                   }
+                                   .input-car{
+                                   background: #E9E9E9;
+                                   border: none;
+                                   border-radius: 8px;
+                                   width: 95%;
+                                   height: 44px;
+                                   margin-right: 10px;
+                                   margin-top: 10px;
+                                   }
+                              }
+                         }
                          .crash-date-fieldset{
                               border: none;
                               padding: 0;

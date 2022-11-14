@@ -159,7 +159,7 @@
                                    поможет вам решить вопросы со страховыми случая в два счета.</span>
                                    <span class="company-header">Мы быстро справимся со всеми инстанциями.</span>
 
-                                   <span class="company-header">Мы проконсультируем вас и рассчитаем сумму, которую вы 
+                                   <span class="company-header-last">Мы проконсультируем вас и рассчитаем сумму, которую вы 
                                    получите при заключении с нами договора цессии.
                                    </span>
                               </div>
@@ -378,14 +378,24 @@
                                                   <span><p>Пройдите опрос и &nbsp;</p></span>
                                                   <span><p class="p-red">ПОЛУЧИТЕ СКИДКУ</p></span>
                                              </div>
-                                             <form >                              
+                                             <form > 
+                                                  <fieldset class="personal-data">
+                                                       <div class="name"> 
+                                                            <label class="name-header"><span>Ваше имя?</span><span style="color:rgba(228, 76, 76, 1)">*</span></label>                               
+                                                            <input class="input-name" name="name"  type="text" placeholder="&nbsp;Имя" required>
+                                                       </div>  
+                                                       <div class="car"> 
+                                                            <label class="car-header"><span>Марка машины?</span><span style="color:rgba(228, 76, 76, 1)">*</span></label>                               
+                                                            <input class="input-car" name="car"  type="text" placeholder="&nbsp;Например Reno logan (2007)" required>
+                                                       </div>   
+                                                  </fieldset>                         
                                                   <fieldset class="crash-date-fieldset"> 
                                                        
                                                             <label><span> В каком месяце у вас было ДТП?</span><span style="color:rgba(228, 76, 76, 1)"> *</span></label>
                                                             <div class="date-input">                                
-                                                                 <input class="date" type="number" id="" value="" name="day" placeholder="&nbsp;дд" required minlength="2" maxlength="2">
+                                                                 <input class="date" type="number" id="" value="" name="day" placeholder="&nbsp;дд" required min="1" max="31">
                                                                  <input class="date" type="number" id="" value="" name="month" placeholder="&nbsp;мм" required min="1" max="12">
-                                                                 <input class="date" type="number" id="" value="" name="year" placeholder="&nbsp;гг" required minlength="4" maxlength="4">
+                                                                 <input class="date" type="number" id="" value="" name="year" placeholder="&nbsp;гг" required min="2018" max="2050">
                                                             </div>       
                                                   
                                                   </fieldset>
@@ -393,7 +403,7 @@
                                                        <label><span>Есть ли у вас оценка страховой компании?</span><span style="color:rgba(228, 76, 76, 1)"> *</span></label>
                                                        <div class="options">
                                                             <label title="item1">
-                                                            <input type="radio" name="has_grade" value="1" /> 
+                                                            <input type="radio" name="has_grade"  value="1" /> 
                                                             <img />
                                                             <p>Да</p> 
                                                        </label>
@@ -618,7 +628,7 @@
                                              </defs>
                                              </svg>
                                              <div>
-                                                  <span class="regular">Ускоренный по данным ГАИ </span>
+                                                  <span class="">Ускоренный по данным ГАИ </span>
                                                   <span class="red">10 дней</span>
                                              </div>
                                         </div>
@@ -939,22 +949,22 @@
                                    
                                    <p class="p-main">ЧТО ДЕЛАТЬ ЕСЛИ ВЫ ПОПАЛИ В ДТП?</p>
                                    <div class="list">
-                                        <img src="images/1.png" alt="">
+                                        <img src="images/1.svg" alt="">
                                         
                                         <p>ПОЗВОНИТЬ В 102</p>
                                    </div>
                                    <div class="list">
-                                        <img src="images/2.png" alt="">
+                                        <img src="images/2.svg" alt="">
                                         <p>Сфотографировать и снять на видео место происшествия <br>
                                              и повреждения транспортных средств</p>                                   
                                    </div>
                                    <div class="list">
-                                        <img src="images/3.png" alt="">
+                                        <img src="images/3.svg" alt="">
                                         <p>Получить материалы ГАИ для регистрации <br>
                                              в страховой компании</p> 
                                    </div>
-                                   <div class="list">
-                                        <img src="images/4.png" alt="">
+                                   <div class="list">       
+                                        <img src="images/4.svg" alt="">
                                         <p>СВЯЗАТЬСЯ С НАМИ </p>          
                                         <a class="tel" href="tel:+7 777 669 6696">+7 777 669 6696</a>
                                         <div class="contacts">

@@ -77,6 +77,8 @@ const form = document.querySelector("form");
 form.addEventListener("submit",(e)=>{
   e.preventDefault()
   const data = new FormData(form);
+  const name = data.get('name');
+  const car = data.get('car');
   const day = data.get('day');  
   const year = data.get('year');  
   const month = data.get('month');    
@@ -135,7 +137,9 @@ form.addEventListener("submit",(e)=>{
     : "не указано";
 
     doc.setFont("Roboto-Regular");
-    doc.text(`Дата: ${day}.${month}.${year}\n
+    doc.text(`Имя: ${name}\n
+Марка машины: ${car}\n
+Дата: ${day}.${month}.${year}\n
 Есть ли у вас оценка страховой компании: ${has_grade_text}\n
 Устраивает ли вас оценка страховой: ${is_grade_okey_text}\n
 Оценка ущерба: ${how_much_text} \n
