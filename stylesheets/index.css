@@ -582,8 +582,8 @@
   height: 100%;
   background-image: url("../images/fourth_page_bg_item_1.png"), url("../images/fourth_page_bg_item_2.png");
   background-repeat: no-repeat, no-repeat;
-  background-position-x: 0px, 1467px;
-  background-position-y: 412px, 0px;
+  background-position-x: 0%, 100%;
+  background-position-y: 100%, 0%;
 }
 .fourth-page-container .content {
   max-width: 1380px;
@@ -646,13 +646,13 @@
   padding-top: 10px;
 }
 .fourth-page-container .content .form-box .form .form-content form .personal-data .name .name-header {
-  padding-bottom: 10px;
+  display: block;
 }
 .fourth-page-container .content .form-box .form .form-content form .personal-data .name .input-name {
   background: #E9E9E9;
   border: none;
   border-radius: 8px;
-  width: 250px;
+  width: 95%;
   height: 44px;
   margin-right: 10px;
   margin-top: 10px;
@@ -660,11 +660,14 @@
 .fourth-page-container .content .form-box .form .form-content form .personal-data .car {
   padding-top: 10px;
 }
+.fourth-page-container .content .form-box .form .form-content form .personal-data .car .car-header {
+  display: block;
+}
 .fourth-page-container .content .form-box .form .form-content form .personal-data .car .input-car {
   background: #E9E9E9;
   border: none;
   border-radius: 8px;
-  width: 250px;
+  width: 95%;
   height: 44px;
   margin-right: 10px;
   margin-top: 10px;
