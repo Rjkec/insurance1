@@ -75,7 +75,7 @@
                                         background: #E9E9E9;
                                         border: none;
                                         border-radius: 8px;
-                                        width: 95%;
+                                        width: 418px;
                                         height: 44px;
                                         margin-right: 10px;
                                         margin-top: 10px;
@@ -90,7 +90,7 @@
                                    background: #E9E9E9;
                                    border: none;
                                    border-radius: 8px;
-                                   width: 95%;
+                                   width: 418px;
                                    height: 44px;
                                    margin-right: 10px;
                                    margin-top: 10px;
@@ -259,5 +259,11 @@
      }
      .fourth-page-container .content .form-box .form .form-content form .user-fieldset .expandable input.text{
           width: 80%;
+     }
+     .fourth-page-container .content .form-box .form .form-content form .personal-data .name .input-name{
+          width: 250px;
+     }
+     .fourth-page-container .content .form-box .form .form-content form .personal-data .car .input-car{
+          width: 250px;
      }
 }
