@@ -88,11 +88,13 @@
                               background: radial-gradient(53.93% 1778.15% at 56.74% 41.94%, #FF3D3D 0%, #B91F1F 100%);
                               -webkit-background-clip: text;
                               -webkit-text-fill-color: transparent;
-                              margin-bottom: -45px;
+                              
+                              
                                                         
                               
                          }
-                         p{                                                           
+                         .p-text{        
+                              margin-bottom: 30px;                                                   
                               font-size: 18px;            
                               
                          }
@@ -243,9 +245,10 @@
                          font-weight: 700;
                          font-size: 18px;
                     }
-                    p{
+                    .p-text{
                          font-weight: 300;
                          font-size: 14px;
+                         margin-bottom: 16px;
                     }
 
           }
