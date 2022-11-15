@@ -72,6 +72,32 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+//STOP SCROLL
+
+function preventScroll(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  return false;
+}
+
+function disableScrollModal(){
+document.querySelector('.modal').addEventListener('wheel', preventScroll);
+}
+
+function enableScrollModal(){
+  document.querySelector('.modal').removeEventListener('wheel', preventScroll);
+}
+function disableScrollPrice(){
+  document.querySelector('.modal-price').addEventListener('wheel', preventScroll);
+  }
+  
+  function enableScrollPrice(){
+    document.querySelector('.modal-price').removeEventListener('wheel', preventScroll);
+  }
+
+
+
 //FORM
 const form = document.querySelector("form");
 form.addEventListener("submit",(e)=>{
@@ -112,11 +138,13 @@ form.addEventListener("submit",(e)=>{
   if (how_much===0) {   
     document.querySelector(`#result`).innerHTML = discount;
     document.querySelector(".modal").classList.add("opened");
+    disableScrollModal()
    
   } else  {    
     const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`)));
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened"); 
+    disableScrollPrice()
   
   }
   const makePDF = () => {

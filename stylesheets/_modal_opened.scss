@@ -1,5 +1,6 @@
 @use 'vars';
 .modal{
+     overflow-y: scroll;
      display: none;
      position: fixed;
      top: 0;
