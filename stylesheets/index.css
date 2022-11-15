@@ -43,6 +43,7 @@
   flex-direction: row;
   gap: 21px;
   align-items: center;
+  justify-content: center;
 }
 .full-page-container .content .header .navbar a {
   font-size: 18px;
@@ -52,6 +53,10 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  justify-content: flex-end;
+}
+.full-page-container .content .header .contacts .svg-container {
+  margin: 25px;
 }
 .full-page-container .content .header .language .ru {
   font-family: "Inter";

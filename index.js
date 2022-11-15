@@ -114,8 +114,7 @@ form.addEventListener("submit",(e)=>{
     document.querySelector(".modal").classList.add("opened");
    
   } else  {    
-    const finalPrice = how_much*0.15
-    const discountedPrice = how_much - (finalPrice + how_much * Number(`0.0${discount}`))
+    const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`)));
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened"); 
   
@@ -173,7 +172,7 @@ const showExpandable = (e) => {
     expandable.style.display = "none"
   }  
 }
-const radioButtons = document.querySelectorAll('input[name="is_grade_okey"]')
+const radioButtons = document.querySelectorAll('input[name="has_grade"]')
 radioButtons.forEach(b=>b.addEventListener("change",showExpandable));
 
 
