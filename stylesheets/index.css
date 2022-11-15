@@ -57,6 +57,8 @@
 }
 .full-page-container .content .header .contacts .svg-container {
   margin: 25px;
+  display: flex;
+  gap: 15px;
 }
 .full-page-container .content .header .language .ru {
   font-family: "Inter";
@@ -790,7 +792,7 @@
   .fourth-page-container .content .form-box .form .form-content .text-header {
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    font-size: 18px;
   }
   .fourth-page-container .content .form-box .form .form-content form {
     margin: 20px;
