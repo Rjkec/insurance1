@@ -134,14 +134,14 @@ form.addEventListener("submit",(e)=>{
   }
   
   discount = discount > 3 ? 3 : discount; 
-    
+  const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`)));  
   if (how_much===0) {   
     document.querySelector(`#result`).innerHTML = discount;
     document.querySelector(".modal").classList.add("opened");
     disableScrollModal()
    
   } else  {    
-    const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`)));
+    
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened"); 
     disableScrollPrice()
@@ -149,13 +149,13 @@ form.addEventListener("submit",(e)=>{
   }
   const makePDF = () => {
     const doc = new jspdf.jsPDF();
-    const has_grade_text = has_grade===1 
+    const has_grade_text = has_grade==="1" 
     ? "да" 
     : "нет";
-    const is_grade_okey_text = is_grade_okey===1 
+    const is_grade_okey_text = is_grade_okey==="1" 
     ? "да" 
     : "нет";
-    const is_judge_outside_text = is_judge_outside===1 
+    const is_judge_outside_text = is_judge_outside==="1" 
     ? "да" 
     : "нет";
     
@@ -169,8 +169,9 @@ form.addEventListener("submit",(e)=>{
 Дата: ${day}.${month}.${year}\n
 Есть ли у вас оценка страховой компании: ${has_grade_text}\n
 Устраивает ли вас оценка страховой: ${is_grade_okey_text}\n
-Оценка ущерба: ${how_much_text} \n
-Назначен ли административный суд: ${is_judge_outside_text}`,10,10);
+Оценка ущерба: ${how_much_text}\n
+Назначен ли административный суд: ${is_judge_outside_text}\n
+Сумма выплаты: ${Math.round(discountedPrice)} тнг`,10,10);
     doc.save("a4.pdf");
   
   }
