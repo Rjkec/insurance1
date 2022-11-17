@@ -134,19 +134,20 @@ form.addEventListener("submit",(e)=>{
   }
   
   discount = discount > 3 ? 3 : discount; 
-  const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`)));  
+  const discountedPrice = how_much - (how_much * (0.15 - Number(`0.0${discount}`))); 
+
   if (how_much===0) {   
     document.querySelector(`#result`).innerHTML = discount;
     document.querySelector(".modal").classList.add("opened");
-    disableScrollModal()
+    disableScrollModal();
    
   } else  {    
-    
     document.querySelector(`#result-price`).innerHTML = Math.round(discountedPrice);
     document.querySelector(".modal-price").classList.add("opened"); 
-    disableScrollPrice()
+    disableScrollPrice();
   
   }
+  
   const makePDF = () => {
     const doc = new jspdf.jsPDF();
     const has_grade_text = has_grade==="1" 
@@ -172,7 +173,7 @@ form.addEventListener("submit",(e)=>{
 Оценка ущерба: ${how_much_text}\n
 Назначен ли административный суд: ${is_judge_outside_text}\n
 Сумма выплаты: ${Math.round(discountedPrice)} тнг`,10,10);
-    doc.save("a4.pdf");
+    doc.save("информация_о_проишествии.pdf");
   
   }
   document.querySelector("#pdf").addEventListener("click", (e) => {    
